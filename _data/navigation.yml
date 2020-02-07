@@ -48,3 +48,8 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+  - titles:
+      en: summary
+      zh : 年终总结
+    url: /summary.html
