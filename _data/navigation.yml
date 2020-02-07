@@ -1,7 +1,7 @@
 header:
   - titles:
       # @start locale config
-      en      : &EN       归档
+      en      : &EN       Archives
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
