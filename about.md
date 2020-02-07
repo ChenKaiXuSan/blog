@@ -5,7 +5,6 @@ titles:
   zh-CN : &ZH_HANS  关于
 key: page-about
 ---
-# the-story-of-mine
 
 写一些自己的故事。  
 关于自己，关于生活。  
