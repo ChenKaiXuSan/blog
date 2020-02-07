@@ -2,24 +2,24 @@
 layout: article
 titles:
   en      : &EN       About
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
+  zh-CN : &ZH_HANS  关于
 key: page-about
 ---
+# the-story-of-mine
 
-Just say something about yourself. :+1:
+写一些自己的故事。  
+关于自己，关于生活。  
+希望生活能善待我。
 
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}
+## 关于我是谁
+有的时候自我感觉良好，有的时候感觉很自卑。  
+会很自律，也有用乐观的心态看这个缤纷的世界。  
+从来不想做让自己后悔的事情。  
+心中有野兽，脑海中想法有很多，但是却很懒惰。  
+文笔不是很好，但是却有一颗写东西的心。  
+偶尔会看一些奇奇怪怪的东西，对书的兴趣时好时坏，知道应该不停的充电来充实自己，但是有的时候想法却很懒惰，不想动脑子去思考问题。  
+每天会对自身进行总结，也会写日记。正是因为之前老师告诉我，吾日三省吾身，所以有的时候真的会认真的进行一些自我反思。  
+喜欢新奇的东西，非常喜欢电子产品。对于电子产品的投入不计回报，只要是喜欢的，一定会买到手。  
+
+
+留学狗，日本金泽大学留学中。  
