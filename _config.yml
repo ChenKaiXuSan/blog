@@ -220,6 +220,7 @@ defaults:
       show_edit_on_github: true
       # show_subscribe: true
       show_author_profile: true
+      # author: author
       pageview: true
 
 
