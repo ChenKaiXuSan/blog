@@ -1,9 +1,8 @@
 ---
 layout: article
-titles:
-  en      : &EN       About
-  zh-CN : &ZH_HANS  关于
 key: page-about
+lang: zh
+author: author
 ---
 
 写一些自己的故事。  
@@ -24,3 +23,8 @@ key: page-about
 留学狗，日本金泽大学留学中。  
 
 ###### 我想，我在写这个网站的时候，一定很伤心吧。
+
+## 关于网站的随想
+* [x] 感觉应该建立一个记录心情的页面，来记录一下每日的心情。 `success`{:.success}
+    * 记录在每日一笔，直接粗暴的放在导航栏。
+* [ ] 之前看到的3Dlive感觉也很不错，找时间搞一下。

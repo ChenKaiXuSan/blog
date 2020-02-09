@@ -31,7 +31,7 @@ header:
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
+      zh-Hans : &ZH_HANS  关于我
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
@@ -49,9 +49,14 @@ header:
       # @end locale config
     url: /about.html
 
+  - titles:
+      en : &EN Everyday
+      zh : &ZH_HANS 每日一笔
+    url: /2020/02/09/每日一笔
+
 
 docs-en:
-  - title:      Start
+  - title:      目录
     children:
-      - title:  2018-07-01-welcome.md
-        url:    2018/07/01/welcome.html
+      - title:  分类
+        url:    archive.html
