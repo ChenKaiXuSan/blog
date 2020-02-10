@@ -9,13 +9,19 @@
 自己进行了一些改进，之后有时间的话准备在这个基础上开发自己的网站。  
 谢谢作者提供的模板。
 
-## 运行命令
+## Tips
+- 运行命令
 ```
 bundle exec jekyll server
 ```
 
-## 运行后可以看到草稿
+- 运行后可以看到草稿
 ```
 bundle exec jekyll server --drafts
 ```
-
+- 当在Gemfile里面添加新的插件时。
+```
+rm Gemfile.lock
+bundle install
+```
+安装新添加的插件。

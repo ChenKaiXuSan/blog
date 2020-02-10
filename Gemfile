@@ -8,3 +8,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # 自定义内容
 gem "github-pages"
+
+gem "jekyll-paginate", "~> 1.1"

@@ -246,6 +246,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-paginate (~> 1.1)
   jekyll-text-theme
   tzinfo-data
 
