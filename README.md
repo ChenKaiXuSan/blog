@@ -25,3 +25,5 @@ rm Gemfile.lock
 bundle install
 ```
 安装新添加的插件。
+
+- 启用gitalk的时候，需要给每个博客在YAML信息里面添加key值，而且不能重复。本地运行时不会显示评论，只有上传之后才能看到。
