@@ -135,9 +135,9 @@ comments:
     clientID    : d6b1697597ebd8d90903 # GitHub Application Client ID
     clientSecret: e011914c14763007fcf587aa2cc000b5b62dc258 # GitHub Application Client Secret
     repository  : chenkaixusan.github.io/blog # GitHub repo
-    owner       : chenkaixusan # GitHub repo owner
+    owner       : chenkaixusan@gmail.com # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      chenkaixusan # - your GitHub Id
+      chenkaixusan@gmail.com # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
