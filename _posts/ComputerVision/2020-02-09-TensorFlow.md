@@ -1,6 +1,6 @@
 ---
 title: TensorFlow安装
-tags: [ComputerVision, TensorFlow]
+tag: [ComputerVision, TensorFlow]
 
 ---
 
