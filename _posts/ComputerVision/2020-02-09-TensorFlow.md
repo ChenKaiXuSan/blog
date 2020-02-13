@@ -1,6 +1,7 @@
 ---
 title: TensorFlow安装
-tag: ComputerVision
+tags: [ComputerVision, TensorFlow]
+
 ---
 
 安装手顺适用于Ubuntu 
