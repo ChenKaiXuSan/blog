@@ -1,5 +1,5 @@
 current directory: /home/chenkaixu/blog/vendor/bundle/ruby/2.5.0/gems/commonmarker-0.17.13/ext/commonmarker
-/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200207-13155-1khq1z0.rb extconf.rb
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200213-4164-1ahr4g.rb extconf.rb
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 creating Makefile
@@ -69,4 +69,4 @@ linking shared-object commonmarker/commonmarker.so
 
 current directory: /home/chenkaixu/blog/vendor/bundle/ruby/2.5.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20200207-13155-13w2kme/commonmarker
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20200213-4164-tcvsla/commonmarker

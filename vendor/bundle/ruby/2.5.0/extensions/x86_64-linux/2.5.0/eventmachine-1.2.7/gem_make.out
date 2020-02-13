@@ -1,5 +1,5 @@
 current directory: /home/chenkaixu/blog/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200207-15328-qjg6fd.rb extconf.rb
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200213-4164-1fkwg4u.rb extconf.rb
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 creating Makefile
@@ -15,4 +15,4 @@ linking shared-object fastfilereaderext.so
 
 current directory: /home/chenkaixu/blog/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20200207-15328-4ow5sl
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20200213-4164-1uh3ifp
