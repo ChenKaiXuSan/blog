@@ -280,7 +280,32 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>主页</h1></header><meta itemprop="headline" content="主页"><meta itemprop="author" content="chenkaixu"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/02/09/TensorFlow.html"><h2 itemprop="headline" class="item__header">TensorFlow安装</h2></a></header>
+          <header><a href="/2020/02/09/TensorFlow%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.html"><h2 itemprop="headline" class="item__header">TensorFlow快速开始</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">本篇教程来自TensorFlow官网初学者的 TensorFlow 2.0 教程
+下载并安装TensorFlow
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+# 安装 TensorFlow
+
+import tensorflow as tf
+
+
+载入MNIST数据集
+将样本从整数转换为浮点数
+mnist = tf.keras.datasets.mnist
+
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0...</div><p><a href="/2020/02/09/TensorFlow%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=TensorFlow">TensorFlow</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=ComputerVision">ComputerVision</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 02月09日</span>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-02-09T00:00:00+09:00">
+    <meta itemprop="keywords" content="TensorFlow,ComputerVision"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/02/09/TensorFlow%E5%AE%89%E8%A3%85.html"><h2 itemprop="headline" class="item__header">TensorFlow安装</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">安装手顺适用于Ubuntu
 检查版本号
 python3 --version
@@ -298,7 +323,7 @@ sudo pip3 install -U virtualenv  # system-wide install
 存放在./venv文件下。用python当作解释程序
 virtualenv --system-site-packages -p python3 ./venv
 
-启动虚拟环境...</div><p><a href="/2020/02/09/TensorFlow.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+启动虚拟环境...</div><p><a href="/2020/02/09/TensorFlow%E5%AE%89%E8%A3%85.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=ComputerVision">ComputerVision</a>
             </li><li>
@@ -435,18 +460,8 @@ virtualenv --system-site-packages -p python3 ./venv
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2019年 12月09日</span>
             </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2019-12-09T00:00:00+09:00">
     <meta itemprop="keywords" content="写给谁的情书"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2019/12/08/%E6%BD%9C%E4%BC%8F.html"><h2 itemprop="headline" class="item__header">潜伏</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">花了短短两天半的时间，把2008年的古老谍战片《潜伏》看完了。
-不得不说，潜伏拍得真的不错，剧情很真实，内容也很合乎情理。真的是不可多得的一步谍战片。会看这么老的电视剧的原因也就是前几天玩了《隐形守护者》这款游戏，玩过之后就对谍战类型的作品很感兴趣，这个时候刚好就想到了《潜伏》。以前断断续续的看过一些剧情，但是内容都很不完整。现在总算是有兴趣而且有大把的时间来好好的欣赏这部作品了。虽然仅仅花了两天半的时间有点短，而且甘的有点厉害，但是剧情和剧中人物的形象真的是深入我的脑海中。
-《潜伏》这个电视剧，放在现在的职场环境中依旧适用。里面主角余则成在工作中的一些为人处世知道真的值得细细品味，学习。虽然是谍战片，讲的更多的内容是如何潜伏，但是其中涉及的同僚之间的利害关系斗争等内容都值得观众细细玩...</div><p><a href="/2019/12/08/%E6%BD%9C%E4%BC%8F.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%E8%A7%82%E5%90%8E%E6%84%9F">观后感</a>
-            </li></ul><ul class="right-col menu"><li><i class="fas fa-user"></i> <span>chenkaixu</span></li><li><i class="far fa-calendar-alt"></i> <span>2019年 12月08日</span>
-            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2019-12-08T00:00:00+09:00">
-    <meta itemprop="keywords" content="观后感"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>共计 14 篇文章，2 页。</p>
+</div><div class="layout--home"><div class="pagination"><p>共计 15 篇文章，2 页。</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
             <i class="fas fa-angle-left"></i>
