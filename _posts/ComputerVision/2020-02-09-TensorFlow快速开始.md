@@ -5,6 +5,8 @@ tag: [TensorFlow, ComputerVision]
 
 本篇教程来自TensorFlow官网[初学者的 TensorFlow 2.0 教程](https://www.tensorflow.org/tutorials/quickstart/beginner)
 {:.info}
+
+使用MNIST数据集
 ## 下载并安装TensorFlow
 ```
 from __future__ import absolute_import, division, print_function, unicode_literals
