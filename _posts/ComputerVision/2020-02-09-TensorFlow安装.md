@@ -51,3 +51,15 @@ python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1
 deactivate  # don't exit until you're done using TensorFlow
 ```
 在运行TensorFlow的时候，应该一直使用虚拟环境
+
+## 在vscode中运行
+### 需要配置运行环境，settings.json
+```
+{
+    "python.pythonPath": "/home/chenkaixu/venv/bin/python3.6",
+    "python.venvPath": "/home/chenkaixu/venv",
+
+    "python.linting.pylintPath": "pylint",
+    "python.formatting.autopep8Path": "autopep8"
+}
+```
