@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-02-18T18:13:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-02-21T10:15:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
 </subtitle><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><entry><title type="html">深度学习入门</title><link href="http://localhost:4000/2020/02/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.html" rel="alternate" type="text/html" title="深度学习入门" /><published>2020-02-18T00:00:00+09:00</published><updated>2020-02-18T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8</id><content type="html" xml:base="http://localhost:4000/2020/02/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.html">&lt;h1 id=&quot;神经网络的数据表示&quot;&gt;神经网络的数据表示&lt;/h1&gt;
+
 &lt;h2 id=&quot;张量tensor&quot;&gt;张量（tensor）&lt;/h2&gt;
 &lt;p&gt;使用张量作为基本数据结构。&lt;/p&gt;
 
@@ -42,6 +43,11 @@
 
 &lt;p class=&quot;warning&quot;&gt;很多库中不存在字符串张量。&lt;/p&gt;
 
+&lt;h2 id=&quot;数据批量&quot;&gt;数据批量&lt;/h2&gt;
+&lt;p&gt;数据张量的第一个轴（0轴）都是&lt;strong&gt;样本轴（sample axis，样本维度）&lt;/strong&gt;。
+深度学习模型不会同时处理整个数据集，而是将数据拆分成小批量。&lt;br /&gt;
+对于这种批量张量，第一个轴（0轴)叫做&lt;strong&gt;批量轴（batch axis）&lt;/strong&gt;或&lt;strong&gt;批量维度（batch dimension）&lt;/strong&gt;。&lt;/p&gt;
+
 &lt;h2 id=&quot;现实世界中的数据张量&quot;&gt;现实世界中的数据张量&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;向量数据：2D张量&lt;/li&gt;
@@ -72,8 +78,52 @@
 &lt;p&gt;数学符号中&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;z = x.y
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p class=&quot;warning&quot;&gt;两个向量之间的点积是一个标量，而且只有元素个数相同的向量之间才能做点积。&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><summary type="html">神经网络的数据表示 张量（tensor） 使用张量作为基本数据结构。 是一个数据容器。 它包含的数据几乎总是数值数据，因此它是数字的容器。 矩阵是二维张量。 张量是矩阵向任意维度的推广。 张量的 维度（dimension) 叫做 轴（axis） 标量（0D张量） 仅包含一个数字的张量叫做 标量(scalar) 向量（1D张量） 数字组成的数组叫做 向量(vector) 或 一维张量（1D张量） 一维张量只有一个轴。 矩阵（2D张量） 向量组成的数组叫做 矩阵（matrix） 或 二维张量（2D张量） 矩阵有两个轴（行和列） 3D张量与更高维度的张量 将多个矩阵组合成一个新的数组，可以得到一个3D张量。 直观的理解为数字组成的立方体。 高维度张量以此类推。 关键属性 张量由以下三个关键属性来定义。 轴的个数（阶） 3D张量有3个轴，矩阵有2个轴。 形状 张量沿每个轴的维度大小（元素个数）。 数据类型 张量中所包含数据的类型。 很多库中不存在字符串张量。 现实世界中的数据张量 向量数据：2D张量 时间序列数据 或 序列数据：3D张量 图像：4D张量 视频：5D张量 张量运算 逐元素运算 广播 两个形状不同的张量进行操作，会发生什么？ 较小的张量会被广播（broadcast），以匹配较大张量的形状。 广播包含以下两个步骤： 向较小的张量添加轴（叫做广播轴）。 将较小的张量沿着新轴重复，使其形状与较大张量相同。 张量点积 点积运算，也叫张量积（tensor product）。 它将输入张量的元素合并在一起。 z = np.dot(x,y) 数学符号中 z = x.y 两个向量之间的点积是一个标量，而且只有元素个数相同的向量之间才能做点积。</summary></entry><entry><title type="html">最优化笔记</title><link href="http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96.html" rel="alternate" type="text/html" title="最优化笔记" /><published>2020-02-18T00:00:00+09:00</published><updated>2020-02-18T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96</id><content type="html" xml:base="http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96.html">&lt;h1 id=&quot;cs231n-optimization&quot;&gt;cs231n optimization&lt;/h1&gt;
-&lt;p&gt;Optimization is the process of finding the set of parameters W that minimize the loss function.&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><category term="cs231n" /><summary type="html">cs231n optimization Optimization is the process of finding the set of parameters W that minimize the loss function.</summary></entry><entry><title type="html">PyTorch张量</title><link href="http://localhost:4000/2020/02/17/Pytorch.html" rel="alternate" type="text/html" title="PyTorch张量" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-17T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/17/Pytorch</id><content type="html" xml:base="http://localhost:4000/2020/02/17/Pytorch.html">&lt;h1 id=&quot;基本数据类型&quot;&gt;基本数据类型&lt;/h1&gt;
+&lt;p class=&quot;warning&quot;&gt;两个向量之间的点积是一个标量，而且只有元素个数相同的向量之间才能做点积。&lt;/p&gt;
+
+&lt;h2 id=&quot;张量变形tensor-reshaping&quot;&gt;张量变形（tensor reshaping）&lt;/h2&gt;
+&lt;p&gt;张量变形是指改变张量的行和列，以得到想要的形状。&lt;/p&gt;
+
+&lt;p&gt;特殊的张量变形：转置（transposition）。&lt;/p&gt;
+
+&lt;h1 id=&quot;基于梯度的优化&quot;&gt;基于梯度的优化&lt;/h1&gt;
+&lt;h2 id=&quot;训练循环training-loop&quot;&gt;训练循环（training loop)&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;抽取训练样本x和对应目标y组成的数据批量&lt;/li&gt;
+  &lt;li&gt;在x上运行网络[前向传播（forward pass）]，得到预测值y_pred&lt;/li&gt;
+  &lt;li&gt;计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。&lt;/li&gt;
+  &lt;li&gt;更新网络的所有权重，使网络在这批数据上的损失略微下降。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对于第四步，更好的方法是利用网络中所有运算都是 &lt;strong&gt;可微（differentiable）&lt;/strong&gt; 的，计算损失相对于网络系数的 &lt;strong&gt;梯度（gradient）&lt;/strong&gt;，然后向梯度的反方向改变系数，从而使损失降低。&lt;/p&gt;
+
+&lt;p class=&quot;info&quot;&gt;可微的意思是“可以被求导”&lt;/p&gt;
+
+&lt;h2 id=&quot;张量运算的导数梯度&quot;&gt;张量运算的导数：梯度&lt;/h2&gt;
+&lt;h2 id=&quot;随机梯度下降&quot;&gt;随机梯度下降&lt;/h2&gt;
+&lt;h3 id=&quot;小批量随机梯度下降mini-batch-stochastic-gradient-descent&quot;&gt;小批量随机梯度下降（mini-batch stochastic gradient descent）&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;抽取训练样本x和对应目标y组成的数据批量&lt;/li&gt;
+  &lt;li&gt;在x上运行网络，得到预测值y_pred&lt;/li&gt;
+  &lt;li&gt;计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。&lt;/li&gt;
+  &lt;li&gt;计算损失相对于网络参数的梯度【一次**反向传播（backward pass）】。&lt;/li&gt;
+  &lt;li&gt;将参数沿着梯度的反方向移动一点，从而使这批数据上的损失减小一点。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;info&quot;&gt;&lt;strong&gt;随机（stochastic）&lt;/strong&gt;是指每批数据都是随机抽取的。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;真SGD&lt;/strong&gt;：每次迭代时只抽取一个样本和目标。&lt;br /&gt;
+&lt;strong&gt;批量SGD&lt;/strong&gt;：每一次迭代都在所有数据上运行。这样每次更新都更加准确，但计算代价也高很多。&lt;/p&gt;
+
+&lt;p&gt;SGD还有很多种变体，带动量的SGD等变体，被称为&lt;strong&gt;优化方法（optimization method）&lt;/strong&gt;或 &lt;strong&gt;优化器（optimizer）&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;动量方法的实现过程是，每一步都移动小球，不仅要考虑当前的斜率值（当前的加速度），还要考虑当前的速度（来自于之前的加速度）。&lt;br /&gt;
+在神经网络中，更新参数w不仅要考虑当前的梯度值，还要考虑上一次的参数更新。&lt;/p&gt;
+
+&lt;h2 id=&quot;链式求导反向传播算法&quot;&gt;链式求导：反向传播算法&lt;/h2&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><summary type="html">神经网络的数据表示 张量（tensor） 使用张量作为基本数据结构。 是一个数据容器。 它包含的数据几乎总是数值数据，因此它是数字的容器。 矩阵是二维张量。 张量是矩阵向任意维度的推广。 张量的 维度（dimension) 叫做 轴（axis） 标量（0D张量） 仅包含一个数字的张量叫做 标量(scalar) 向量（1D张量） 数字组成的数组叫做 向量(vector) 或 一维张量（1D张量） 一维张量只有一个轴。 矩阵（2D张量） 向量组成的数组叫做 矩阵（matrix） 或 二维张量（2D张量） 矩阵有两个轴（行和列） 3D张量与更高维度的张量 将多个矩阵组合成一个新的数组，可以得到一个3D张量。 直观的理解为数字组成的立方体。 高维度张量以此类推。 关键属性 张量由以下三个关键属性来定义。 轴的个数（阶） 3D张量有3个轴，矩阵有2个轴。 形状 张量沿每个轴的维度大小（元素个数）。 数据类型 张量中所包含数据的类型。 很多库中不存在字符串张量。 数据批量 数据张量的第一个轴（0轴）都是样本轴（sample axis，样本维度）。 深度学习模型不会同时处理整个数据集，而是将数据拆分成小批量。 对于这种批量张量，第一个轴（0轴)叫做批量轴（batch axis）或批量维度（batch dimension）。 现实世界中的数据张量 向量数据：2D张量 时间序列数据 或 序列数据：3D张量 图像：4D张量 视频：5D张量 张量运算 逐元素运算 广播 两个形状不同的张量进行操作，会发生什么？ 较小的张量会被广播（broadcast），以匹配较大张量的形状。 广播包含以下两个步骤： 向较小的张量添加轴（叫做广播轴）。 将较小的张量沿着新轴重复，使其形状与较大张量相同。 张量点积 点积运算，也叫张量积（tensor product）。 它将输入张量的元素合并在一起。 z = np.dot(x,y) 数学符号中 z = x.y 两个向量之间的点积是一个标量，而且只有元素个数相同的向量之间才能做点积。 张量变形（tensor reshaping） 张量变形是指改变张量的行和列，以得到想要的形状。 特殊的张量变形：转置（transposition）。 基于梯度的优化 训练循环（training loop) 抽取训练样本x和对应目标y组成的数据批量 在x上运行网络[前向传播（forward pass）]，得到预测值y_pred 计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。 更新网络的所有权重，使网络在这批数据上的损失略微下降。 对于第四步，更好的方法是利用网络中所有运算都是 可微（differentiable） 的，计算损失相对于网络系数的 梯度（gradient），然后向梯度的反方向改变系数，从而使损失降低。 可微的意思是“可以被求导” 张量运算的导数：梯度 随机梯度下降 小批量随机梯度下降（mini-batch stochastic gradient descent） 抽取训练样本x和对应目标y组成的数据批量 在x上运行网络，得到预测值y_pred 计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。 计算损失相对于网络参数的梯度【一次**反向传播（backward pass）】。 将参数沿着梯度的反方向移动一点，从而使这批数据上的损失减小一点。 随机（stochastic）是指每批数据都是随机抽取的。 真SGD：每次迭代时只抽取一个样本和目标。 批量SGD：每一次迭代都在所有数据上运行。这样每次更新都更加准确，但计算代价也高很多。 SGD还有很多种变体，带动量的SGD等变体，被称为优化方法（optimization method）或 优化器（optimizer）。 动量方法的实现过程是，每一步都移动小球，不仅要考虑当前的斜率值（当前的加速度），还要考虑当前的速度（来自于之前的加速度）。 在神经网络中，更新参数w不仅要考虑当前的梯度值，还要考虑上一次的参数更新。 链式求导：反向传播算法</summary></entry><entry><title type="html">最优化笔记</title><link href="http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96.html" rel="alternate" type="text/html" title="最优化笔记" /><published>2020-02-18T00:00:00+09:00</published><updated>2020-02-18T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96</id><content type="html" xml:base="http://localhost:4000/2020/02/18/%E6%9C%80%E4%BC%98%E5%8C%96.html">&lt;h1 id=&quot;cs231n-optimization&quot;&gt;cs231n optimization&lt;/h1&gt;
+&lt;p&gt;Optimization is the process of finding the set of parameters W that minimize the loss function.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/21360434?refer=intelligentunit&quot;&gt;(知乎)最优化笔记&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://cs231n.github.io/optimization-1/&quot;&gt;cs231n&lt;/a&gt;&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><category term="cs231n" /><summary type="html">cs231n optimization Optimization is the process of finding the set of parameters W that minimize the loss function. (知乎)最优化笔记 cs231n</summary></entry><entry><title type="html">PyTorch张量</title><link href="http://localhost:4000/2020/02/17/Pytorch.html" rel="alternate" type="text/html" title="PyTorch张量" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-17T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/17/Pytorch</id><content type="html" xml:base="http://localhost:4000/2020/02/17/Pytorch.html">&lt;h1 id=&quot;基本数据类型&quot;&gt;基本数据类型&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;标量（0维）&lt;br /&gt;
 一维长度为1的张量确实也可以表示张量
