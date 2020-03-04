@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-02-28T15:19:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
-</subtitle><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><entry><title type="html">Jekyll基本用法</title><link href="http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.html" rel="alternate" type="text/html" title="Jekyll基本用法" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95</id><content type="html" xml:base="http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.html">&lt;h1 id=&quot;build命令&quot;&gt;build命令&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-03-04T13:36:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
+</subtitle><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><entry xml:lang="zh"><title type="html">每日一笔</title><link href="http://localhost:4000/2020/03/04/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html" rel="alternate" type="text/html" title="每日一笔" /><published>2020-03-04T00:00:00+09:00</published><updated>2020-03-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/03/04/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94</id><content type="html" xml:base="http://localhost:4000/2020/03/04/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html">&lt;h2 id=&quot;每日一笔记录生活&quot;&gt;每日一笔，记录生活&lt;/h2&gt;
+&lt;h3 id=&quot;2020年03月04日-132118&quot;&gt;2020年03月04日 13:21:18&lt;/h3&gt;
+&lt;p&gt;三月伊始，继续努力。&lt;/p&gt;
+
+&lt;p&gt;看了《小王子》，写给大人的童话。&lt;br /&gt;
+随着年龄的增长，心中的童趣慢慢的就少了，更多的是大人世界的成熟与残忍。&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><summary type="html">每日一笔，记录生活 2020年03月04日 13:21:18 三月伊始，继续努力。 看了《小王子》，写给大人的童话。 随着年龄的增长，心中的童趣慢慢的就少了，更多的是大人世界的成熟与残忍。</summary></entry><entry><title type="html">Jekyll基本用法</title><link href="http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.html" rel="alternate" type="text/html" title="Jekyll基本用法" /><published>2020-02-28T00:00:00+09:00</published><updated>2020-02-28T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95</id><content type="html" xml:base="http://localhost:4000/2020/02/28/%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.html">&lt;h1 id=&quot;build命令&quot;&gt;build命令&lt;/h1&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -569,21 +574,4 @@ True
   &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=89520991&amp;amp;page=1&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="写给谁的情书" /><summary type="html">彭寒薇，生日快乐！ 这个生日一定是你过得最特别的一个，也是我给别人过得最特别的一个。 祝你天天快乐，每天开心！</summary></entry><entry><title type="html">请回答1988</title><link href="http://localhost:4000/2020/02/17/%E8%AF%B7%E5%9B%9E%E7%AD%941988.html" rel="alternate" type="text/html" title="请回答1988" /><published>2020-02-17T00:00:00+09:00</published><updated>2020-02-17T00:00:00+09:00</updated><id>http://localhost:4000/2020/02/17/%E8%AF%B7%E5%9B%9E%E7%AD%941988</id><content type="html" xml:base="http://localhost:4000/2020/02/17/%E8%AF%B7%E5%9B%9E%E7%AD%941988.html">&lt;h1 id=&quot;写在开头&quot;&gt;写在开头&lt;/h1&gt;
-&lt;p&gt;又开坑了这个电视剧，这次是二刷。姑且是下载好了，之后需要多长时间才能看完就不知道了。毕竟这个电视剧每一集的时间还是很长的，而我现在也没有那么多时间都话在看电视剧上面。&lt;/p&gt;
-
-&lt;p&gt;慢慢看，慢慢写感想吧。&lt;/p&gt;
-
-&lt;h3 id=&quot;2020年02月17日-164957&quot;&gt;2020年02月17日 16:49:57&lt;/h3&gt;
-&lt;p&gt;发现我真的是一个多情的人，今天看了三集《请回答1988》。被剧中的剧情有所触动，哭的稀里哗啦的。说好的男儿有泪不轻弹呢，到我这边就不起效果了呀。&lt;/p&gt;
-
-&lt;p&gt;虽然是第二遍看这个电视剧了，但是时隔这么多年再看感概还是那么的真实。&lt;br /&gt;
-虽然细节的剧情已经全部都忘记了，但是演员塑造的人物性格还是记着一清二楚的。&lt;/p&gt;
-
-&lt;p&gt;我想，我喜欢这个电视剧就是因为它讲的故事特别的真实吧。&lt;br /&gt;
-其实也不是什么轰轰烈烈的故事，只不过是一个胡同，一个时代背景下，普普通通的三口人家的生活。但是在我看来，确实能治愈我的心灵。&lt;br /&gt;
-让我明白一些道理，也让我知道大家都是怎么生活的。&lt;/p&gt;
-
-&lt;h3 id=&quot;2020年02月21日-153207&quot;&gt;2020年02月21日 15:32:07&lt;/h3&gt;
-&lt;p&gt;果然不管是什么时间看，什么岁数看，都是很让人感动的故事啊。&lt;br /&gt;
-都是些生活的小事，却显得格外的真实。&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="观后感" /><summary type="html">写在开头 又开坑了这个电视剧，这次是二刷。姑且是下载好了，之后需要多长时间才能看完就不知道了。毕竟这个电视剧每一集的时间还是很长的，而我现在也没有那么多时间都话在看电视剧上面。 慢慢看，慢慢写感想吧。 2020年02月17日 16:49:57 发现我真的是一个多情的人，今天看了三集《请回答1988》。被剧中的剧情有所触动，哭的稀里哗啦的。说好的男儿有泪不轻弹呢，到我这边就不起效果了呀。 虽然是第二遍看这个电视剧了，但是时隔这么多年再看感概还是那么的真实。 虽然细节的剧情已经全部都忘记了，但是演员塑造的人物性格还是记着一清二楚的。 我想，我喜欢这个电视剧就是因为它讲的故事特别的真实吧。 其实也不是什么轰轰烈烈的故事，只不过是一个胡同，一个时代背景下，普普通通的三口人家的生活。但是在我看来，确实能治愈我的心灵。 让我明白一些道理，也让我知道大家都是怎么生活的。 2020年02月21日 15:32:07 果然不管是什么时间看，什么岁数看，都是很让人感动的故事啊。 都是些生活的小事，却显得格外的真实。</summary></entry></feed>
+&lt;/div&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="写给谁的情书" /><summary type="html">彭寒薇，生日快乐！ 这个生日一定是你过得最特别的一个，也是我给别人过得最特别的一个。 祝你天天快乐，每天开心！</summary></entry></feed>
