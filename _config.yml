@@ -222,6 +222,7 @@ defaults:
       show_author_profile: true
       # author: author
       pageview: true
+      # 评论功能
       comment: true
 
 
