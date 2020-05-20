@@ -152,13 +152,13 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: leancloud # false (default), "leancloud", "custom"
+  provider: #leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
-  leancloud:
-    app_id    : "cDEvkKFpVkYxWFu9m6sLuTPz-gzGzoHsz" # LeanCloud App id
-    app_key   : "ANaIwWSGjSVHw13fBcdK5cWj" # LeanCloud App key
-    app_class : "5XnMvr9IhLNg7G6Gw2VCFFpk" # LeanCloud App class
+  # leancloud:
+  #   app_id    : "cDEvkKFpVkYxWFu9m6sLuTPz-gzGzoHsz" # LeanCloud App id
+  #   app_key   : "ANaIwWSGjSVHw13fBcdK5cWj" # LeanCloud App key
+  #   app_class : "5XnMvr9IhLNg7G6Gw2VCFFpk" # LeanCloud App class
 
 
 ## => Search
@@ -222,7 +222,7 @@ defaults:
       show_author_profile: true
       # author: author
       # 页面访问次数统计
-      pageview: true
+      # pageview: true
       # 评论功能
       comment: true
 

@@ -280,12 +280,88 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>主页</h1></header><meta itemprop="headline" content="主页"><meta itemprop="author" content="chenkaixu"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/05/20/%E6%88%BF%E6%80%9D%E7%90%AA%E7%9A%84%E5%88%9D%E6%81%8B%E4%B9%90%E5%9B%AD.html"><h2 itemprop="headline" class="item__header">房思琪的初恋乐园</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">书评
+2020年05月20日 16:07:29
+这本书读起来太吃力了，感觉心中承受了很大的压力与痛苦。
+
+仿佛我变成了李国华，曾经干过很过分的事情，对一个房思琪和很多人。
+一瞬间我又变成了房思琪，看着伊纹姐承受暴力，又被憧憬的李老师以“爱”为名义肆意蹂躏。
+
+作者的文笔太好了，一个句子反反复复读几遍才能明白其中深意。
+有的时候觉得脑子跟不上作者的文笔了。
+
+拉回现实的时候喘口气，还好只是小说。
+我多么幸运，幸福。</div><p><a href="/2020/05/20/%E6%88%BF%E6%80%9D%E7%90%AA%E7%9A%84%E5%88%9D%E6%81%8B%E4%B9%90%E5%9B%AD.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 05月20日</span>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-05-20T00:00:00+09:00">
+    <meta itemprop="keywords" content="读后感"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html"><h2 itemprop="headline" class="item__header">卷积神经网络笔记</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">卷积层
+概述和直观介绍
+卷积层的参数是有一些可学习的滤波器集合构成的。每个滤波器在空间上（宽度和高度）都比较小，但是深度和输入数据一致。举例来说，卷积神经网络第一层的一个典型的滤波器的尺寸可以是5x5x3（宽高都是5像素，深度是3是因为图像应为颜色通道，所以有3的深度）。在前向传播的时候，让每个滤波器都在输入数据的宽度和高度上滑动（更精确地说是卷积），然后计算整个滤波器和输入数据任一处的内积。当滤波器沿着输入数据的宽度和高度滑过后，会生成一个2维的激活图（activation map），激活图给出了在每个空间位置处滤波器的反应。
+
+局部连接
+在处理图像这样的高维度输入时，让每个神经元都与前一层中的所有神经元进行全连接是不现实的。相反，我们让每个神经元只与输入数据的一个局部区域连接。该连...</div><p><a href="/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=ComputerVision">ComputerVision</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=cs231n">cs231n</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 05月20日</span>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-05-20T00:00:00+09:00">
+    <meta itemprop="keywords" content="ComputerVision,cs231n"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html"><h2 itemprop="headline" class="item__header">深度学习用于计算机视觉</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">卷积神经网络简介
+卷积运算
+
+  密集连层：从输入特征空间中学到的是全局模式
+  卷积层：局部模式
+
+
+卷积神经网络具有以下两个特性：
+
+  学到的模式具有 平移不变性
+  可以学到 模式的空间层次结构
+
+
+卷积由以下两个关键参数定义：
+
+  从输入中提取的图块尺寸
+  输出特征图的深度：卷积所计算的过滤器的数量。
+
+
+输出的宽度和高度可能与输入的不同，原因：
+
+  边界效应，可通过对输入特征图进行填充来抵消
+  使用了 步幅
+
+
+最大池化运算
+作用：对特征图进行下采样，与步进卷积类似。 
+原因：
+
+  减少需要处理的特征图的元素个数
+  通过让连续卷积层的观察窗口越来越大从而引入空间过滤器的层级结构</div><p><a href="/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=ComputerVision">ComputerVision</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=Python%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0">Python深度学习</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 05月18日</span>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-05-18T00:00:00+09:00">
+    <meta itemprop="keywords" content="ComputerVision,Python深度学习"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/04/25/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%90%91%E4%BD%A0%E7%9A%84%E5%B1%B1.html"><h2 itemprop="headline" class="item__header">你当像鸟飞向你的山</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody"></div><p><a href="/2020/04/25/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%90%91%E4%BD%A0%E7%9A%84%E5%B1%B1.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 04月25日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-25T00:00:00+09:00">
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-25T00:00:00+09:00">
     <meta itemprop="keywords" content="读后感"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/04/12/%E8%87%B4%E5%91%BD%E5%A5%B3%E4%BA%BA.html"><h2 itemprop="headline" class="item__header">致命女人</h2></a></header>
@@ -306,7 +382,7 @@
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=%E8%A7%82%E5%90%8E%E6%84%9F">观后感</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 04月12日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-12T00:00:00+09:00">
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-12T00:00:00+09:00">
     <meta itemprop="keywords" content="观后感"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/04/12/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90.html"><h2 itemprop="headline" class="item__header">陈凯旭，生日快乐！</h2></a></header>
@@ -320,7 +396,7 @@
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=%E8%87%B4%E8%87%AA%E5%B7%B1">致自己</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 04月12日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-12T00:00:00+09:00">
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-12T00:00:00+09:00">
     <meta itemprop="keywords" content="致自己"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/04/04/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html"><h2 itemprop="headline" class="item__header">每日一笔</h2></a></header>
@@ -347,7 +423,7 @@
 电子海洛因真上头。</div><p><a href="/2020/04/04/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94">每日一笔</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="2020-02-09-每日一笔">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-04T00:00:00+09:00">
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-04T00:00:00+09:00">
     <meta itemprop="keywords" content="每日一笔"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/03/31/%E6%88%91%E6%9D%A5%E9%87%91%E6%B3%BD%E8%BF%99%E4%B8%80%E5%B9%B4.html"><h2 itemprop="headline" class="item__header">我来金泽这一年</h2></a></header>
@@ -366,91 +442,10 @@
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=%E6%97%A5%E8%AE%B0">日记</a>
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 03月31日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-03-31T00:00:00+09:00">
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-03-31T00:00:00+09:00">
     <meta itemprop="keywords" content="日记"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/03/13/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80.html"><h2 itemprop="headline" class="item__header">博弈论基础</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">完全信息静态博弈
-博弈的标准式表达
-
-  囚徒困境
-    重复剔除严格劣战略
-  
-  严格劣战略
-    纳什均衡的导出和定义
-  
-  纳什均衡
-  性别战博弈
-
-
-应用举例
-古诺的双头垄断模型
-贝特兰德的双头垄断模型</div><p><a href="/2020/03/13/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 03月13日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-03-13T00:00:00+09:00">
-    <meta itemprop="keywords" content="读后感"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/03/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.html"><h2 itemprop="headline" class="item__header">机器学习基础</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">机器学习的四个分支
-监督学习
-监督学习是目前最常见的机器学习类型。
-变体：
-
-  序列生成：给定一张图像，预测描述图像的文字。
-  语法树预测：给定一个句子，预测其分解生成的语法树。
-  目标检测：给定一张图像，在图中特定目标的周围画一个边界框。
-  图像分割：给定一张图像，在特定物体上画一个象素级的mask。
-
-
-无监督学习
-是指在没有目标的情况下寻找输入数据的有趣变换。
-
-  降维
-  聚类
-
-
-自监督学习
-没有人类参与的监督学习。
-标签是从输入数据中生成的，通常是使用启发式算法生成的。
-
-  自编码器
-
-
-强化学习
-
-  智能体 
-还没有工业化，未来？
-
-
-评估机器学习模型
-训练集，验证集和测试集
-
-  超参数–选择层数或每层的的大小
-  参数–权重
-  信息泄露
-
-
-如果数据很...</div><p><a href="/2020/03/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=ComputerVision">ComputerVision</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Python%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0">Python深度学习</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 03月13日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-03-13T00:00:00+09:00">
-    <meta itemprop="keywords" content="ComputerVision,Python深度学习"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/03/12/%E6%83%B3%E8%A7%81%E4%BD%A0.html"><h2 itemprop="headline" class="item__header">想见你</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">刚连夜看完想见你，趁着记忆犹新的时候来写点什么记录一下。</div><p><a href="/2020/03/12/%E6%83%B3%E8%A7%81%E4%BD%A0.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%E8%A7%82%E5%90%8E%E6%84%9F">观后感</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 03月12日</span>
-            </li><li><i class="far fa-eye"></i> <span class="js-pageview" data-page-key="">0</span> 阅读</li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-03-12T00:00:00+09:00">
-    <meta itemprop="keywords" content="观后感"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>共计 34 篇文章，5 页。</p>
+</div><div class="layout--home"><div class="pagination"><p>共计 37 篇文章，5 页。</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
             <i class="fas fa-angle-left"></i>
