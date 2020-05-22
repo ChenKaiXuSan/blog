@@ -1,5 +1,202 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-05-20T17:34:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
-</subtitle><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><entry><title type="html">卷积神经网络笔记</title><link href="http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="卷积神经网络笔记" /><published>2020-05-20T00:00:00+09:00</published><updated>2020-05-20T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html">&lt;h1 id=&quot;卷积层&quot;&gt;卷积层&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" /><updated>2020-05-22T11:43:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">旭的小窝</title><subtitle>这里讲我的故事
+</subtitle><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><entry><title type="html">周志华《机器学习》</title><link href="http://localhost:4000/2020/05/21/%E7%BB%AA%E8%AE%BA.html" rel="alternate" type="text/html" title="周志华《机器学习》" /><published>2020-05-21T00:00:00+09:00</published><updated>2020-05-21T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/21/%E7%BB%AA%E8%AE%BA</id><content type="html" xml:base="http://localhost:4000/2020/05/21/%E7%BB%AA%E8%AE%BA.html">&lt;h1 id=&quot;绪论&quot;&gt;绪论&lt;/h1&gt;
+&lt;h2 id=&quot;基本术语&quot;&gt;基本术语&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据集&lt;/li&gt;
+  &lt;li&gt;示例&lt;/li&gt;
+  &lt;li&gt;属性/特征&lt;/li&gt;
+  &lt;li&gt;属性值&lt;/li&gt;
+  &lt;li&gt;属性空间/样本空间/输入空间&lt;/li&gt;
+  &lt;li&gt;特征向量&lt;/li&gt;
+  &lt;li&gt;维数：有几个属性就是几维&lt;/li&gt;
+  &lt;li&gt;学习/训练：从数据中学的模型的过程，通过执行某个算法完成。&lt;/li&gt;
+  &lt;li&gt;训练数据
+    &lt;ul&gt;
+      &lt;li&gt;训练样本&lt;/li&gt;
+      &lt;li&gt;训练样本&lt;/li&gt;
+      &lt;li&gt;训练集&lt;/li&gt;
+      &lt;li&gt;假设：学得模型对应了关于数据的某些前在的规律&lt;/li&gt;
+      &lt;li&gt;真相/真实：潜在规律自身&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;预测&lt;/li&gt;
+  &lt;li&gt;标记&lt;/li&gt;
+  &lt;li&gt;样例：有标记信息的是示例&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;标记空间/输出空间&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分类
+    &lt;ul&gt;
+      &lt;li&gt;二分类任务
+        &lt;ul&gt;
+          &lt;li&gt;正类&lt;/li&gt;
+          &lt;li&gt;反类&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;多分类任务&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;回归&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;测试&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;测试样本&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;聚类&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;簇&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;监督学习：分类，回归&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;无监督学习：聚类&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;泛化&lt;/li&gt;
+  &lt;li&gt;分布
+    &lt;ul&gt;
+      &lt;li&gt;独立分布&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;假设空间&quot;&gt;假设空间&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;归纳&lt;/li&gt;
+  &lt;li&gt;演绎&lt;/li&gt;
+  &lt;li&gt;概念&lt;/li&gt;
+  &lt;li&gt;版本空间&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;归纳偏好&quot;&gt;归纳偏好&lt;/h2&gt;
+&lt;p&gt;机器学习算法在学习过程中对某种类型假设的偏好&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;奥卡姆剃刀：若有多个假设与观察一致，则选择最简单的那个&lt;/li&gt;
+  &lt;li&gt;没有免费午餐定理：没有一种机器学习算法是适用于所有情况的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;发展历程&quot;&gt;发展历程&lt;/h2&gt;
+&lt;h2 id=&quot;应用现状&quot;&gt;应用现状&lt;/h2&gt;
+&lt;h2 id=&quot;阅读材料&quot;&gt;阅读材料&lt;/h2&gt;
+
+&lt;h1 id=&quot;模型评估与选择&quot;&gt;模型评估与选择&lt;/h1&gt;
+&lt;h2 id=&quot;经验误差与过拟合&quot;&gt;经验误差与过拟合&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;错误率&lt;/li&gt;
+  &lt;li&gt;精度&lt;/li&gt;
+  &lt;li&gt;误差
+    &lt;ul&gt;
+      &lt;li&gt;训练误差/经验误差&lt;/li&gt;
+      &lt;li&gt;泛化误差&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;过拟合&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;欠拟合&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;模型选择问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;评估方法&quot;&gt;评估方法&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;测试集&lt;/li&gt;
+  &lt;li&gt;测试误差&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;留出法&quot;&gt;留出法&lt;/h3&gt;
+&lt;p&gt;分层采样&lt;/p&gt;
+
+&lt;h3 id=&quot;交叉验证法k折交叉验证&quot;&gt;交叉验证法(k折交叉验证)&lt;/h3&gt;
+&lt;p&gt;留一法&lt;/p&gt;
+
+&lt;h3 id=&quot;自助法&quot;&gt;自助法&lt;/h3&gt;
+&lt;p&gt;包外估计&lt;/p&gt;
+
+&lt;h3 id=&quot;调参与最终模型&quot;&gt;调参与最终模型&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;调参&lt;/li&gt;
+  &lt;li&gt;验证集&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;性能度量&quot;&gt;性能度量&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;均方误差&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;错误率与精度&quot;&gt;错误率与精度&lt;/h3&gt;
+&lt;h3 id=&quot;查准率查全率与f1&quot;&gt;查准率，查全率与F1&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;查准率&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;查全率&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;真正例&lt;/li&gt;
+  &lt;li&gt;真反例&lt;/li&gt;
+  &lt;li&gt;假正例&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;假反例&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;混淆矩阵&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;比较学习器性能&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;平衡点（BEP）&lt;/li&gt;
+  &lt;li&gt;F1度量&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有多个二分类混淆矩阵&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;宏查准率&lt;/li&gt;
+  &lt;li&gt;宏查全率&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;宏F1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;微查准率&lt;/li&gt;
+  &lt;li&gt;微查全率&lt;/li&gt;
+  &lt;li&gt;微F1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;roc与auc&quot;&gt;ROC与AUC&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;分类阈值&lt;/li&gt;
+  &lt;li&gt;ROC：受试者工作特征曲线
+    &lt;ul&gt;
+      &lt;li&gt;真正例率&lt;/li&gt;
+      &lt;li&gt;假正例率&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;AUC：ROC曲线下的面积，比较不同学习器ROC性能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;代价敏感错误率与代价曲线&quot;&gt;代价敏感错误率与代价曲线&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;非均等代价：衡量不同类型错误所造成的不同损失&lt;/li&gt;
+  &lt;li&gt;代价矩阵&lt;/li&gt;
+  &lt;li&gt;代价敏感错误率&lt;/li&gt;
+  &lt;li&gt;代价曲线&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;比较校验&quot;&gt;比较校验&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;统计假设检验&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;假设检验&quot;&gt;假设检验&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;二项检验
+    &lt;ul&gt;
+      &lt;li&gt;置信度&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;t检验&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;交叉验证t检验&quot;&gt;交叉验证t检验&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;成对t检验&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mcnemar检验&quot;&gt;McNemar检验&lt;/h3&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><category term="机器学习" /><summary type="html">绪论 基本术语 数据集 示例 属性/特征 属性值 属性空间/样本空间/输入空间 特征向量 维数：有几个属性就是几维 学习/训练：从数据中学的模型的过程，通过执行某个算法完成。 训练数据 训练样本 训练样本 训练集 假设：学得模型对应了关于数据的某些前在的规律 真相/真实：潜在规律自身 预测 标记 样例：有标记信息的是示例 标记空间/输出空间 分类 二分类任务 正类 反类 多分类任务 回归 测试 测试样本 聚类 簇 监督学习：分类，回归 无监督学习：聚类 泛化 分布 独立分布 假设空间 归纳 演绎 概念 版本空间 归纳偏好 机器学习算法在学习过程中对某种类型假设的偏好 奥卡姆剃刀：若有多个假设与观察一致，则选择最简单的那个 没有免费午餐定理：没有一种机器学习算法是适用于所有情况的 发展历程 应用现状 阅读材料 模型评估与选择 经验误差与过拟合 错误率 精度 误差 训练误差/经验误差 泛化误差 过拟合 欠拟合 模型选择问题 评估方法 测试集 测试误差 留出法 分层采样 交叉验证法(k折交叉验证) 留一法 自助法 包外估计 调参与最终模型 调参 验证集 性能度量 均方误差 错误率与精度 查准率，查全率与F1 查准率 查全率 真正例 真反例 假正例 假反例 混淆矩阵 比较学习器性能 平衡点（BEP） F1度量 有多个二分类混淆矩阵 宏查准率 宏查全率 宏F1 微查准率 微查全率 微F1 ROC与AUC 分类阈值 ROC：受试者工作特征曲线 真正例率 假正例率 AUC：ROC曲线下的面积，比较不同学习器ROC性能 代价敏感错误率与代价曲线 非均等代价：衡量不同类型错误所造成的不同损失 代价矩阵 代价敏感错误率 代价曲线 比较校验 统计假设检验 假设检验 二项检验 置信度 t检验 交叉验证t检验 成对t检验 McNemar检验</summary></entry><entry><title type="html">卷积神经网络笔记</title><link href="http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="卷积神经网络笔记" /><published>2020-05-20T00:00:00+09:00</published><updated>2020-05-20T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/2020/05/20/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0.html">&lt;h1 id=&quot;卷积层&quot;&gt;卷积层&lt;/h1&gt;
 &lt;h2 id=&quot;概述和直观介绍&quot;&gt;概述和直观介绍&lt;/h2&gt;
 &lt;p&gt;卷积层的参数是有一些可学习的滤波器集合构成的。每个滤波器在空间上（宽度和高度）都比较小，但是深度和输入数据一致。举例来说，卷积神经网络第一层的一个典型的滤波器的尺寸可以是5x5x3（宽高都是5像素，深度是3是因为图像应为颜色通道，所以有3的深度）。在前向传播的时候，让每个滤波器都在输入数据的宽度和高度上滑动（更精确地说是卷积），然后计算整个滤波器和输入数据任一处的内积。当滤波器沿着输入数据的宽度和高度滑过后，会生成一个2维的激活图（activation map），激活图给出了在每个空间位置处滤波器的反应。&lt;/p&gt;
 
@@ -99,7 +296,13 @@
 有的时候觉得脑子跟不上作者的文笔了。&lt;/p&gt;
 
 &lt;p&gt;拉回现实的时候喘口气，还好只是小说。&lt;br /&gt;
-我多么幸运，幸福。&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="读后感" /><summary type="html">书评 2020年05月20日 16:07:29 这本书读起来太吃力了，感觉心中承受了很大的压力与痛苦。 仿佛我变成了李国华，曾经干过很过分的事情，对一个房思琪和很多人。 一瞬间我又变成了房思琪，看着伊纹姐承受暴力，又被憧憬的李老师以“爱”为名义肆意蹂躏。 作者的文笔太好了，一个句子反反复复读几遍才能明白其中深意。 有的时候觉得脑子跟不上作者的文笔了。 拉回现实的时候喘口气，还好只是小说。 我多么幸运，幸福。</summary></entry><entry><title type="html">深度学习用于计算机视觉</title><link href="http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html" rel="alternate" type="text/html" title="深度学习用于计算机视觉" /><published>2020-05-18T00:00:00+09:00</published><updated>2020-05-18T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89</id><content type="html" xml:base="http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html">&lt;h1 id=&quot;卷积神经网络简介&quot;&gt;卷积神经网络简介&lt;/h1&gt;
+我多么幸运，幸福。&lt;/p&gt;
+
+&lt;h2 id=&quot;2020年05月21日-162208&quot;&gt;2020年05月21日 16:22:08&lt;/h2&gt;
+&lt;p&gt;第二章失乐园快读完了，心里还是很压抑。&lt;br /&gt;
+感觉作者的思路很乱，一段话需要反反复复的理解，值得深思。&lt;/p&gt;
+
+&lt;p&gt;也许是我理解能力太差了，作者文笔还是太好了。&lt;/p&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="读后感" /><summary type="html">书评 2020年05月20日 16:07:29 这本书读起来太吃力了，感觉心中承受了很大的压力与痛苦。 仿佛我变成了李国华，曾经干过很过分的事情，对一个房思琪和很多人。 一瞬间我又变成了房思琪，看着伊纹姐承受暴力，又被憧憬的李老师以“爱”为名义肆意蹂躏。 作者的文笔太好了，一个句子反反复复读几遍才能明白其中深意。 有的时候觉得脑子跟不上作者的文笔了。 拉回现实的时候喘口气，还好只是小说。 我多么幸运，幸福。 2020年05月21日 16:22:08 第二章失乐园快读完了，心里还是很压抑。 感觉作者的思路很乱，一段话需要反反复复的理解，值得深思。 也许是我理解能力太差了，作者文笔还是太好了。</summary></entry><entry><title type="html">深度学习用于计算机视觉</title><link href="http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html" rel="alternate" type="text/html" title="深度学习用于计算机视觉" /><published>2020-05-18T00:00:00+09:00</published><updated>2020-05-18T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89</id><content type="html" xml:base="http://localhost:4000/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html">&lt;h1 id=&quot;卷积神经网络简介&quot;&gt;卷积神经网络简介&lt;/h1&gt;
 &lt;h2 id=&quot;卷积运算&quot;&gt;卷积运算&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;密集连层：从输入特征空间中学到的是全局模式&lt;/li&gt;
@@ -411,19 +614,4 @@
   &lt;li&gt;添加L1或L2正则化&lt;/li&gt;
   &lt;li&gt;尝试不同的超参数，以找到最佳的配置&lt;/li&gt;
   &lt;li&gt;（可选）反复做特征工程：添加新特征或删除没有信息量的特征&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><category term="Python深度学习" /><summary type="html">机器学习的四个分支 监督学习 监督学习是目前最常见的机器学习类型。 变体： 序列生成：给定一张图像，预测描述图像的文字。 语法树预测：给定一个句子，预测其分解生成的语法树。 目标检测：给定一张图像，在图中特定目标的周围画一个边界框。 图像分割：给定一张图像，在特定物体上画一个象素级的mask。 无监督学习 是指在没有目标的情况下寻找输入数据的有趣变换。 降维 聚类 自监督学习 没有人类参与的监督学习。 标签是从输入数据中生成的，通常是使用启发式算法生成的。 自编码器 强化学习 智能体 还没有工业化，未来？ 评估机器学习模型 训练集，验证集和测试集 超参数–选择层数或每层的的大小 参数–权重 信息泄露 如果数据很少： 简单的留出验证 K折验证 重复K折验证 简单的留出验证 留出一定比例的数据作为测试集。 k折验证 将数据划分为大小相同的k个分区。 带有打乱数据的重复k折验证 计算代价很大 评估模型的注意事项 数据代表性 时间箭头 数据冗余 数据预处理，特征工程和特征学习 神经网络的数据预处理 目的是使原始数据更适于用神经网络处理 向量化 值标准化 输入数据应具以下特征： 取值较小 同质性 处理缺失值 特征工程 用更简单的方式表述问题，从而使问题变得很容易。 过拟合与欠拟合 优化 泛化 正则化: 降低过拟合的方法 正则化方法： 减小网络大小 容量：模型中可学习参数的个数 添加权重正则化 奥卡姆剃刀原理 一种常见的降低过拟合的方法：强制使模型权重只能选择较小的值，从而限制模型的复杂度，使得分布更加的规则。 实现方法是向网络损失函数中添加与较大权重值相关的成本。 两种形式： L1正则化：成本与权重系数的绝对值成正比 L2正则化（权重衰减）：成本与权重系数的平方成正比 添加dropout正则化 对某一层使用，就是在训练过程中随机将该层的一些输出特征舍弃（设置为0） 总结 防止神经网络过拟合的常用方法： 获得更多的训练数据 减小网络容量 添加权重正则化 添加dropout 机器学习的通用工作流程 定义问题，收集数据集 非平稳问题 选择衡量成功的指标 确定评估方法 准备数据 开发比基准更好的模型 目标是获得 统计功效 选择三个关键参数构建第一个工作模型： 最后一层的激活 损失函数 优化配置 扩大模型规模：开发过拟合的模型 理想的模型是刚好在欠拟合和过拟合的界线上，在容量不足和容量过大的界线上。 模型正则化与调节超参数 应该尝试以下几项： 添加dropout 尝试不同的架构：增加或减少层数 添加L1或L2正则化 尝试不同的超参数，以找到最佳的配置 （可选）反复做特征工程：添加新特征或删除没有信息量的特征</summary></entry><entry><title type="html">博弈论基础</title><link href="http://localhost:4000/2020/03/13/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80.html" rel="alternate" type="text/html" title="博弈论基础" /><published>2020-03-13T00:00:00+09:00</published><updated>2020-03-13T00:00:00+09:00</updated><id>http://localhost:4000/2020/03/13/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80</id><content type="html" xml:base="http://localhost:4000/2020/03/13/%E5%8D%9A%E5%BC%88%E8%AE%BA%E5%9F%BA%E7%A1%80.html">&lt;h1 id=&quot;完全信息静态博弈&quot;&gt;完全信息静态博弈&lt;/h1&gt;
-&lt;h2 id=&quot;博弈的标准式表达&quot;&gt;博弈的标准式表达&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;囚徒困境
-    &lt;h2 id=&quot;重复剔除严格劣战略&quot;&gt;重复剔除严格劣战略&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;严格劣战略
-    &lt;h2 id=&quot;纳什均衡的导出和定义&quot;&gt;纳什均衡的导出和定义&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;纳什均衡&lt;/li&gt;
-  &lt;li&gt;性别战博弈&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;应用举例&quot;&gt;应用举例&lt;/h1&gt;
-&lt;h2 id=&quot;古诺的双头垄断模型&quot;&gt;古诺的双头垄断模型&lt;/h2&gt;
-&lt;h2 id=&quot;贝特兰德的双头垄断模型&quot;&gt;贝特兰德的双头垄断模型&lt;/h2&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="读后感" /><summary type="html">完全信息静态博弈 博弈的标准式表达 囚徒困境 重复剔除严格劣战略 严格劣战略 纳什均衡的导出和定义 纳什均衡 性别战博弈 应用举例 古诺的双头垄断模型 贝特兰德的双头垄断模型</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>chenkaixu</name><email>chenkaixusan@gmail.com</email></author><category term="ComputerVision" /><category term="Python深度学习" /><summary type="html">机器学习的四个分支 监督学习 监督学习是目前最常见的机器学习类型。 变体： 序列生成：给定一张图像，预测描述图像的文字。 语法树预测：给定一个句子，预测其分解生成的语法树。 目标检测：给定一张图像，在图中特定目标的周围画一个边界框。 图像分割：给定一张图像，在特定物体上画一个象素级的mask。 无监督学习 是指在没有目标的情况下寻找输入数据的有趣变换。 降维 聚类 自监督学习 没有人类参与的监督学习。 标签是从输入数据中生成的，通常是使用启发式算法生成的。 自编码器 强化学习 智能体 还没有工业化，未来？ 评估机器学习模型 训练集，验证集和测试集 超参数–选择层数或每层的的大小 参数–权重 信息泄露 如果数据很少： 简单的留出验证 K折验证 重复K折验证 简单的留出验证 留出一定比例的数据作为测试集。 k折验证 将数据划分为大小相同的k个分区。 带有打乱数据的重复k折验证 计算代价很大 评估模型的注意事项 数据代表性 时间箭头 数据冗余 数据预处理，特征工程和特征学习 神经网络的数据预处理 目的是使原始数据更适于用神经网络处理 向量化 值标准化 输入数据应具以下特征： 取值较小 同质性 处理缺失值 特征工程 用更简单的方式表述问题，从而使问题变得很容易。 过拟合与欠拟合 优化 泛化 正则化: 降低过拟合的方法 正则化方法： 减小网络大小 容量：模型中可学习参数的个数 添加权重正则化 奥卡姆剃刀原理 一种常见的降低过拟合的方法：强制使模型权重只能选择较小的值，从而限制模型的复杂度，使得分布更加的规则。 实现方法是向网络损失函数中添加与较大权重值相关的成本。 两种形式： L1正则化：成本与权重系数的绝对值成正比 L2正则化（权重衰减）：成本与权重系数的平方成正比 添加dropout正则化 对某一层使用，就是在训练过程中随机将该层的一些输出特征舍弃（设置为0） 总结 防止神经网络过拟合的常用方法： 获得更多的训练数据 减小网络容量 添加权重正则化 添加dropout 机器学习的通用工作流程 定义问题，收集数据集 非平稳问题 选择衡量成功的指标 确定评估方法 准备数据 开发比基准更好的模型 目标是获得 统计功效 选择三个关键参数构建第一个工作模型： 最后一层的激活 损失函数 优化配置 扩大模型规模：开发过拟合的模型 理想的模型是刚好在欠拟合和过拟合的界线上，在容量不足和容量过大的界线上。 模型正则化与调节超参数 应该尝试以下几项： 添加dropout 尝试不同的架构：增加或减少层数 添加L1或L2正则化 尝试不同的超参数，以找到最佳的配置 （可选）反复做特征工程：添加新特征或删除没有信息量的特征</summary></entry></feed>
