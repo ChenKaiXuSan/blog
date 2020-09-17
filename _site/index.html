@@ -269,7 +269,7 @@
 </svg>
 <a title="这里讲我的故事
 " href="/">旭的小窝</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
-        <ul><li class="navigation__item navigation__item--active"><a href="/">主页</a></li><li class="navigation__item"><a href="/archive.html">归档</a></li><li class="navigation__item"><a href="/about.html">关于我</a></li><li class="navigation__item"><a href="/2020/07/13/每日一笔">每日一笔</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+        <ul><li class="navigation__item navigation__item--active"><a href="/">主页</a></li><li class="navigation__item"><a href="/archive.html">归档</a></li><li class="navigation__item"><a href="/about.html">关于我</a></li><li class="navigation__item"><a href="/2020/08/03/每日一笔">每日一笔</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
 </div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
@@ -280,6 +280,57 @@
 
 <!-- end custom main top snippet -->
 <article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>主页</h1></header><meta itemprop="headline" content="主页"><meta itemprop="author" content="chenkaixu"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/09/17/NIPS_GAN_Tutorial.html"><h2 itemprop="headline" class="item__header">NIPS 2016 Tutorial:Generative Adversarial Networks</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">摘要
+这篇论文总结了在NIPS2016上作者提出的向导。
+这个向导主要包括：
+
+  为什么生成模型值得研究
+  生成模型怎么工作，以及GANs与其他生成模型的比较
+  GANs工作的一些细节
+  GAN相关的研究课题
+  结合GAN与其他发放的最先进图像模型
+最后，这篇向导为读者提供了3个练习，以及练习的答案。
+
+
+介绍
+这个报告总结了在2016NIPS大会上关于GANs的内容。为了确保这个向导对观众最有用，这个向导主要面向去确定在大会初期由观众提出的问题。这个向导不计划全面的介绍GANs的领域；很多出彩的论文没有在这里被提及，只是因为这些论文没有对频繁出现的问题作出解释，另外因为这个向导被设置为2个小时的口述演讲，也没有无限的时间覆盖所有的研究内容。
+
+这个向导将介绍：
+
+  为什么...</div><p><a href="/2020/09/17/NIPS_GAN_Tutorial.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=ComputerVision">ComputerVision</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 09月17日</span>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-09-17T00:00:00+09:00">
+    <meta itemprop="keywords" content="ComputerVision"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/2020/08/03/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html"><h2 itemprop="headline" class="item__header">每日一笔</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">2020年08月03日 18:16:09
+八月伊始，天气依旧是那么闷热。
+
+用训练好的VGG16直接跑数据，速度要来的快很多。
+毕竟只需要跑后面的两个dense层，前面的卷积基都是封装在模型中的。
+今天也深入了解了以下dropout的作用。虽然还不知道数学上的实现，但大致是干什么用的心中还是有一点意识了。
+
+老李和老谢的论文过了，虽然gcce很水，但心中多少还是有羡慕的情绪的。
+年底的时候我要是能发一篇论文出来就好了啊。
+也许不是那么难的吧。
+
+基础看了有一半了吧，差不多该开始看论文了我觉得。
+就从过去的论文开始看吧。
+
+2020年08月06日 13:43:06
+天气依旧是这么的炎热啊。
+啥时候才能进入秋天呢，喜欢凉爽的感觉。
+
+2020年08月10日 17:17:59
+梅雨季节应该过...</div><p><a href="/2020/08/03/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94">每日一笔</a>
+            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-08-03T00:00:00+09:00">
+    <meta itemprop="keywords" content="每日一笔"></div>
+      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
           <header><a href="/2020/07/13/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%AC%94.html"><h2 itemprop="headline" class="item__header">每日一笔</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody">2020年07月03日 16:12:31
 许就没有来研究室了。
@@ -439,57 +490,8 @@
             </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 05月20日</span>
             </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-05-20T00:00:00+09:00">
     <meta itemprop="keywords" content="ComputerVision,cs231n"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html"><h2 itemprop="headline" class="item__header">深度学习用于计算机视觉</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">卷积神经网络简介
-卷积运算
-
-  密集连层：从输入特征空间中学到的是全局模式
-  卷积层：局部模式
-
-
-卷积神经网络具有以下两个特性：
-
-  学到的模式具有 平移不变性
-  可以学到 模式的空间层次结构
-
-
-卷积由以下两个关键参数定义：
-
-  从输入中提取的图块尺寸
-  输出特征图的深度：卷积所计算的过滤器的数量。
-
-
-输出的宽度和高度可能与输入的不同，原因：
-
-  边界效应，可通过对输入特征图进行填充来抵消
-  使用了 步幅
-
-
-最大池化运算
-作用：对特征图进行下采样，与步进卷积类似。 
-原因：
-
-  减少需要处理的特征图的元素个数
-  通过让连续卷积层的观察窗口越来越大从而引入空间过滤器的层级结构</div><p><a href="/2020/05/18/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=ComputerVision">ComputerVision</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Python%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0">Python深度学习</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 05月18日</span>
-            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-05-18T00:00:00+09:00">
-    <meta itemprop="keywords" content="ComputerVision,Python深度学习"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2020/04/25/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%90%91%E4%BD%A0%E7%9A%84%E5%B1%B1.html"><h2 itemprop="headline" class="item__header">你当像鸟飞向你的山</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody"></div><p><a href="/2020/04/25/%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%90%91%E4%BD%A0%E7%9A%84%E5%B1%B1.html">阅读更多</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=%E8%AF%BB%E5%90%8E%E6%84%9F">读后感</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2020年 04月25日</span>
-            </li></ul></div><meta itemprop="author" content="chenkaixu"/><meta itemprop="datePublished" content="2020-04-25T00:00:00+09:00">
-    <meta itemprop="keywords" content="读后感"></div>
       </article></div>
-</div><div class="layout--home"><div class="pagination"><p>共计 41 篇文章，6 页。</p>
+</div><div class="layout--home"><div class="pagination"><p>共计 43 篇文章，6 页。</p>
     <div class="pagination__menu">
       <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
             <i class="fas fa-angle-left"></i>
@@ -522,21 +524,11 @@
             </div></div></div><div class="page__footer d-print-none">
 <footer class="footer py-4 js-page-footer">
   <div class="main"><div itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="chenkaixu"><meta itemprop="url" content="https://chenkaixusan.github.io/blog/"><meta itemprop="description" content="研究僧，程序员，图像处理入门者，日本金泽大学留学中。 喜欢运动，不抽烟，不喝酒。 单纯的人，生活请对我好一点。"><div class="footer__author-links"><div class="author-links">
+      <meta itemprop="name" content="chenkaixu"><meta itemprop="url" content="https://chenkaixusan.github.io/blog/"><meta itemprop="description" content="图像处理入门者，日本金泽大学留学中。 心之所向，即是光明。"><div class="footer__author-links"><div class="author-links">
   <ul class="menu menu--nowrap menu--inline"><link itemprop="url" href="https://chenkaixusan.github.io/blog/"><li title="给我发邮件。">
       <a class="button button--circle mail-button" itemprop="email" href="mailto:chenkaixusan@gmail.com" target="_blank">
         <i class="fas fa-envelope"></i>
-      </a><li title="在 Weibo 上关注我。">
-        <a class="button button--circle weibo-button" itemprop="sameAs" href="https://weibo.com/https://www.weibo.com/p/1005057330982803/home?profile_ftype=1&is_all=1#_0" target="_blank">
-          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<path d="M769.226164 496.610234c-14.420098-4.330228-24.309277-7.266877-16.746482-26.214823 16.350218-41.133578 18.046881-76.626289 0.307181-101.939024-33.242099-47.500415-124.194284-44.928286-228.44638-1.280945 0-0.056317-32.73525 14.323848-24.371737-11.64523 16.042013-51.54906 13.626547-94.739726-11.332929-119.662341-56.566349-56.601163-206.976479 2.134908-335.954595 131.078209-96.594075 96.61353-152.681222 198.989775-152.681222 287.52035 0 169.337597 217.152361 272.292366 429.593589 272.292366 278.498445 0 463.752111-161.808592 463.752111-290.273715C893.345701 558.867622 827.968378 514.820945 769.226164 496.610234zM430.163922 866.063936c-169.51781 16.728051-315.851649-59.899262-326.864086-171.202185-11.010389-111.275277 117.530505-215.061482 287.031932-231.823323 169.537265-16.761841 315.876224 59.866496 326.86511 171.119247C728.190884 745.495411 599.705282 849.291856 430.163922 866.063936z" />
-	<path d="M954.16753 186.714824c-67.256246-74.565105-166.457264-102.990607-258.020739-83.522502l-0.037886 0c-21.188318 4.535015-34.695065 25.37929-30.159026 46.527675 4.516584 21.166816 25.352668 34.691993 46.54201 30.174385 65.139769-13.832358 135.634727 6.400627 183.442323 59.368863 47.765615 52.96414 60.740938 125.206957 40.282686 188.537431l0.011263 0.012287c-6.666851 20.629249 4.617954 42.698153 25.271777 49.366027 20.570885 6.662755 42.687913-4.607714 49.362955-25.188838 0-0.037886 0-0.116729 0.011263-0.150519C1039.577146 362.756133 1021.443231 261.206205 954.16753 186.714824" />
-	<path d="M850.886125 279.919669c-32.732179-36.315956-81.068126-50.108381-125.685136-40.621609-18.234261 3.885839-29.856965 21.833398-25.946551 40.085067 3.89915 18.173849 21.833398 29.851845 40.024654 25.893307l0 0.037886c21.809848-4.610786 45.459709 2.113405 61.461789 19.83365 16.018463 17.757107 20.323092 41.949655 13.45043 63.178931l0.035838 0c-5.715614 17.717174 3.983113 36.770584 21.717694 42.511796 17.7397 5.677728 36.76956-3.992328 42.493365-21.756603C892.458972 365.691759 883.686907 316.228458 850.886125 279.919669" />
-	<path d="M447.103928 548.691741c-80.666743-20.985579-171.84317 19.215193-206.880229 90.291746-35.685212 72.492657-1.180599 152.963828 80.321676 179.268757 84.41947 27.224424 183.926645-14.492797 218.521364-92.744074C573.187374 649.021137 530.586496 570.268131 447.103928 548.691741zM385.506979 733.819463c-16.398343 26.160554-51.51015 37.623523-77.954335 25.54824-26.066352-11.868448-33.760211-42.248645-17.360844-67.757975 16.197652-25.400793 50.129884-36.716316 76.378497-25.711046C393.129162 677.216253 401.60838 707.401901 385.506979 733.819463zM439.522702 664.493841c-5.929616 10.131852-19.03498 15.010909-29.304039 10.785123-10.096014-4.15411-13.261002-15.495231-7.522862-25.454038 5.906066-9.908634 18.500485-14.747758 28.572948-10.750309C441.502995 642.817105 445.180975 654.283146 439.522702 664.493841z" />
-</svg>
-</div>
-        </a>
-      </li><li title="在 Github 上关注我。">
+      </a><li title="在 Github 上关注我。">
         <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/https://github.com/ChenKaiXuSan" target="_blank">
           <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z" />
