@@ -33,4 +33,5 @@ http://www.iangoodfellow.com/slides/2016-12-04-NIPS.key
 https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks
 
 生成对抗网络是生成模型的一个分类。生成模型在很多方面有应用。在这个向导中，这个模型指的是用某种方式去学习并表达针对一个训练数据集分布的估计，也就是$p_{data}$,然后学习描绘一个估计对于一些分布。结果是一个概率分布$p_{model}$。在一些例子中，模型明确的估计$p_{model}$，就像图一那样。在其他情况下，模型只可能从$p_{model}$中生成样本，如图2。一些模型可以两个都做。GANs主要关注在样本生成，尽管可以设计GANs都做两者。  
-![Image](/image/gan/201704/28/eq07.jpg){:.border}
+![Image](/image/gan/201704/28/fig01.jpg)
+{:.border}
