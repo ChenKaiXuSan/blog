@@ -32,10 +32,12 @@ http://www.iangoodfellow.com/slides/2016-12-04-NIPS.key
 视频被NIPS基金会录制，可以在稍后进行观看。
 https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks
 
-生成对抗网络是生成模型的一个分类。生成模型在很多方面有应用。在这个向导中，这个模型指的是用某种方式去学习并表达针对一个训练数据集分布的估计，也就是$p_{data}$,然后学习描绘一个估计对于一些分布。结果是一个概率分布$p_{model}$。在一些例子中，模型明确的估计$p_{model}$，就像图一那样。在其他情况下，模型只可能从$p_{model}$中生成样本，如图2。一些模型可以两个都做。GANs主要关注在样本生成，尽管可以设计GANs都做两者。  
-![Image](/image/gan/201704/28/fig01.png)
+生成对抗网络是生成模型的一个分类。生成模型在很多方面有应用。在这个向导中，这个模型指的是用某种方式去学习并表达针对一个训练数据集分布的估计，也就是$p_{data}$,然后学习描绘一个估计对于一些分布。结果是一个概率分布$p_{model}$。在一些例子中，模型明确的估计$p_{model}$，就像图一那样。在其他情况下，模型只可能从$p_{model}$中生成样本，如图2。一些模型可以两个都做。GANs主要关注在样本生成，尽管可以设计GANs都做两者。    
+![Image](/image/gan/201704/28/fig01.png)  
 {:.border}
+
 Figure1:有些生成模型通过密度估计。这些模型通过从未知的数据生成分布$p_{data}$来获取训练数据样本，然后得到此未知分布的估计。$p_{model}$估计可以给一个特殊的x值进行估计以获得对于真实密度$p_{model}(x)$的$p_{model}(x)$估计。这个图片展示了一个一维数据收集样本的过程，和一个高斯模型。
-![Image](/image/gan/201704/28/fig02.png)
+![Image](/image/gan/201704/28/fig02.png)  
 {:.border}
+
 Figure2:一些生成模型可以从模型分布中生成样本。此图介绍的过程中，我们展示了ImageNet数据集中的样本。
