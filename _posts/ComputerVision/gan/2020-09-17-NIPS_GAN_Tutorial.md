@@ -45,4 +45,4 @@ Figure1:有些生成模型通过密度估计。这些模型通过从未知的数
 
 Figure2:一些生成模型可以从模型分布中生成样本。此图介绍的过程中，我们展示了ImageNet数据集中的样本。
 
-![Image](/image/gan/201704/28/eq01.jpg)
+![Image](/blog/image/gan/201704/28/eq01.jpg)
