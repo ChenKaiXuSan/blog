@@ -1,7 +1,7 @@
 ---
 title: NIPS 2016 Tutorial:Generative Adversarial Networks
 tag: [ComputerVision]
-modify_date: 2020-09-17
+modify_date: 2020-09-20
 ---
 
 ## 摘要
