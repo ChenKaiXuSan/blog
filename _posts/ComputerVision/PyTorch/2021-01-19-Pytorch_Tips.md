@@ -1,5 +1,5 @@
 ---
-title: Pytorch小tips
+title: Pytorch Tips
 tags: [ComputerVision, PyTorch]
 ---
 
@@ -38,3 +38,13 @@ Returns a new Tensor, detached from the current graph.
 The result will never require gradient.
 - torch.nn.Upsample()
 Upsamples a given multi-channel 1D (temporal), 2D (spatial) or 3D (volumetric) data.
+
+### 2021年01月26日 12:09:26
+- torch.nn.BatchNorm1d / torch.nn.BatchNorm2d
+It is a method used to make artificial neural networks faster and more stable through normalization of the input layer by re-centering and re-scaling.
+  - torch.nn.BatchNorm2d: Applies Batch Normalization over a 4D input (a mini-batch of 2D inputs with additional channel dimension)
+  - torch.nn.BatchNorm1d: 2D and 3D input.
+- torch.FloatTensor / torch.cuda.FloatTensor
+前者在cpu上运算，后者在gpu上运算
+- onehot编码
+one hot编码是将类别变量转换为机器学习算法易于利用的一种形式的过程
