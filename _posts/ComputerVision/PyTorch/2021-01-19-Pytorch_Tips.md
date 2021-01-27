@@ -4,6 +4,8 @@ tags: [ComputerVision, PyTorch]
 ---
 
 记录一下是用pytorch中发现的小技巧。
+写的写的觉得应该也把一些python3的东西放进去。  
+然后这篇就变成了写代码的笔记。🤦‍
 
 ### 2021年01月19日 18:50:01
 - .size() vs .shape, which one should be used?
