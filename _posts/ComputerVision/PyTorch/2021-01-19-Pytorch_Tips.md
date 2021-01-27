@@ -47,4 +47,12 @@ It is a method used to make artificial neural networks faster and more stable th
 - torch.FloatTensor / torch.cuda.FloatTensor
 前者在cpu上运算，后者在gpu上运算
 - onehot编码
-one hot编码是将类别变量转换为机器学习算法易于利用的一种形式的过程
+one hot编码是将类别变量转换为机器学习算法易于利用的一种形式的过程。
+如果原本的标签编码是有序的，onehot编码会丢失顺序信息。
+
+### 2021年01月27日 21:26:36
+- D.cuda()
+Moves all model parameters and buffers to the GPU.
+- 关于window系统路径问题
+  - 可以直接复制路径，但要在前面加上r''
+  - 推荐把\改成/
