@@ -58,3 +58,13 @@ Moves all model parameters and buffers to the GPU.
 - 关于window系统路径问题
   - 可以直接复制路径，但要在前面加上r''
   - 推荐把\改成/
+
+### 2021年01月28日 09:27:43
+- torch.squeeze()
+Returns a tensor with all the dimensions of input of size 1 removed.
+For example, if input is of shape: (A×1×B×C×1×D) then the out tensor will be of shape: (A×B×C×D) .
+- torch.stack() / torch.cat()
+连接tensor的时候使用
+  - torch.stack() : 增加一个新维度，理解为叠加
+  - torch.cat() : 增加现有的维度，理解为续接
+
