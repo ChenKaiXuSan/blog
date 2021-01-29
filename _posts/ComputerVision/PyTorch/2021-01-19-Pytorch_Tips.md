@@ -18,7 +18,7 @@ tags: [ComputerVision, PyTorch]
   - torch.randn
   Returns a tensor filled with random numbers from a normal distribution with mean 0 and variance 1 (also called the standard normal distribution).
   - torch.rand
-  Returns a tensor filled with random numbers from a uniform distribution on the interval [0, 1)[0,1).The shape of the tensor is defined by the variable argument size.
+  Returns a tensor filled with random numbers from a uniform distribution on the interval [0,1).The shape of the tensor is defined by the variable argument size.
 
 ### 2021年01月25日 11:33:44
 - torch.nn.Embedding
@@ -68,3 +68,13 @@ For example, if input is of shape: (A×1×B×C×1×D) then the out tensor will b
   - torch.stack() : 增加一个新维度，理解为叠加
   - torch.cat() : 增加现有的维度，理解为续接
 
+### 2021年01月29日 17:21:03
+- numpy.transpose(a)
+Reverse or permute the axes of an array; returns the modified array.
+For an array a with two axes, transpose(a) gives the matrix transpose.
+- pickle (python3)
+模块 pickle 实现了对一个 Python 对象结构的二进制序列化和反序列化。  
+  - pickle.dumps(obj, file)
+  将对象 obj 封存以后的对象写入已打开的 file object file。
+- matplotlib.pyplot.imread(fname, format)
+Read an image from a file into an array.
