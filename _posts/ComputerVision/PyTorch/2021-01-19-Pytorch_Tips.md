@@ -78,3 +78,36 @@ For an array a with two axes, transpose(a) gives the matrix transpose.
   将对象 obj 封存以后的对象写入已打开的 file object file。
 - matplotlib.pyplot.imread(fname, format)
 Read an image from a file into an array.
+
+### 2021年02月01日 16:04:22
+- Lib/functools.py
+functools 模块应用于高阶函数，即参数或（和）返回值为其他函数的函数。 
+通常来说，此模块的功能适用于所有可调用对象。
+- linear_attention_transformer
+A fully featured Transformer that mixes (QKᵀ)V local attention with Q(KᵀV) global attention (scales linearly with respect to sequence length) for efficient long-range language modeling.
+``` 
+ pip install linear-attention-transformer
+```
+- torch.Tensor.contiguous(memory_format=torch.contiguous_format)
+Returns a contiguous in memory tensor containing the same data as self tensor. If self tensor is already in the specified memory format, this function returns the self tensor.
+- torch.mean(input, dim, keepdim=False)
+Returns the mean value of each row of the input tensor in the given dimension dim. If dim is a list of dimensions, reduce over all of them.
+
+### 2021年02月02日 11:26:16
+- print(f" ")
+要使用 格式化字符串字面值 ，请在字符串的开始引号或三引号之前加上一个 f 或 F 。在此字符串中，你可以在 { 和 } 字符之间写可以引用的变量或字面值的 Python 表达式。
+```
+>>> year = 2016
+>>> event = 'Referendum'
+>>> f'Results of the {year} {event}'
+'Results of the 2016 Referendum'
+```
+字符串的 str.format() 方法需要更多的手动操作。你仍将使用 { 和 } 来标记变量将被替换的位置，并且可以提供详细的格式化指令，但你还需要提供要格式化的信息。
+```
+>>> yes_votes = 42_572_654
+>>> no_votes = 43_132_495
+>>> percentage = yes_votes / (yes_votes + no_votes)
+>>> '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)
+' 42572654 YES votes  49.67%'
+```
+最后，你可以使用字符串切片和连接操作自己完成所有的字符串处理，以创建你可以想象的任何布局。字符串类型有一些方法可以执行将字符串填充到给定列宽的有用操作。
