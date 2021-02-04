@@ -1,5 +1,5 @@
 ---
-title: Pytorch Tips
+title: Linux commands
 tags: [ComputerVision, PyTorch]
 ---
 
