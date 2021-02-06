@@ -94,4 +94,45 @@ Returns a contiguous in memory tensor containing the same data as self tensor. I
 Returns the mean value of each row of the input tensor in the given dimension dim. If dim is a list of dimensions, reduce over all of them.
 
 
-### 2021年02月04日 12:14:49
+### 2021年02月06日 17:00:22
+##### torch.numel(input) → int
+Returns the total number of elements in the input tensor.
+```
+>>> a = torch.zeros(4,4)
+>>> torch.numel(a)
+16
+```
+
+##### torch.isnan(input) → Tensor
+Returns a new tensor with boolean elements representing if each element of input is NaN or not. Complex values are considered NaN when either their real and/or imaginary part is NaN.
+```
+>>> torch.isnan(torch.tensor([1, float('nan'), 2]))
+tensor([False, True, False])
+```
+
+##### torch.Tensor.uniform_(from=0, to=1) → Tensor
+Fills self tensor with numbers sampled from the continuous uniform distribution:
+
+$$
+P(x) = \dfrac{1}{\text{to} - \text{from}}
+$$
+​	
+##### torch.Tensor.expand(*sizes) → Tensor
+Returns a new view of the self tensor with singleton dimensions expanded to a larger size.
+Passing -1 as the size for a dimension means not changing the size of that dimension.
+Tensor can be also expanded to a larger number of dimensions, and the new ones will be appended at the front. For the new dimensions, the size cannot be set to -1.
+```
+>>> x = torch.tensor([[1], [2], [3]])
+>>> x.size()
+torch.Size([3, 1])
+>>> x.expand(3, 4)
+tensor([[ 1,  1,  1,  1],
+        [ 2,  2,  2,  2],
+        [ 3,  3,  3,  3]])
+>>> x.expand(-1, 4)   # -1 means not changing the size of that dimension
+tensor([[ 1,  1,  1,  1],
+        [ 2,  2,  2,  2],
+        [ 3,  3,  3,  3]])
+```
+
+
