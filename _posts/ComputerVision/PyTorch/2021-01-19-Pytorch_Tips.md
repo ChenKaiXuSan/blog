@@ -135,4 +135,79 @@ tensor([[ 1,  1,  1,  1],
         [ 3,  3,  3,  3]])
 ```
 
+##### torch.acos(input, *, out=None) → Tensor
+Computes the inverse cosine of each element in input.
+$$
+\text{out}_{i} = \cos^{-1}(\text{input}_{i})
+$$
 
+##### torch.norm(input, p='fro', dim=None, keepdim=False, out=None, dtype=None)
+Returns the matrix norm or vector norm of a given tensor.
+
+### 2021年02月09日 14:55:55
+##### torchvision.transforms.Lambda(lambd)
+Apply a user-defined lambda as a transform. This transform does not support torchscript.
+
+##### torch.nn.functional.interpolate(input, size=None, scale_factor=None, mode='nearest', align_corners=None, recompute_scale_factor=None)
+Down/up samples the input to either the given size or the given scale_factor
+The algorithm used for interpolation is determined by mode.
+
+##### torch.flip(input, dims) → Tensor
+Reverse the order of a n-D tensor along given axis in dims.
+```
+>>> x = torch.arange(8).view(2, 2, 2)
+>>> x
+tensor([[[ 0,  1],
+         [ 2,  3]],
+
+        [[ 4,  5],
+         [ 6,  7]]])
+>>> torch.flip(x, [0, 1])
+tensor([[[ 6,  7],
+         [ 4,  5]],
+
+        [[ 2,  3],
+         [ 0,  1]]])
+```
+
+##### torch.rsqrt(input, *, out=None) → Tensor
+Returns a new tensor with the reciprocal of the square-root of each of the elements of input.
+$$
+\text{out}_{i} = \frac{1}{\sqrt{\text{input}_{i}}}
+$$
+```
+>>> a = torch.randn(4)
+>>> a
+tensor([-0.0370,  0.2970,  1.5420, -0.9105])
+>>> torch.rsqrt(a)
+tensor([    nan,  1.8351,  0.8053,     nan])
+```
+
+##### permute(*dims) → Tensor
+Returns a view of the original tensor with its dimensions permuted.
+```
+>>> x = torch.randn(2, 3, 5)
+>>> x.size()
+torch.Size([2, 3, 5])
+>>> x.permute(2, 0, 1).size()
+torch.Size([5, 2, 3])
+```
+
+### 2021年02月10日 18:46:39
+##### torch.nn.ModuleList(modules: Optional[Iterable[torch.nn.modules.module.Module]] = None)
+Holds submodules in a list.
+
+ModuleList can be indexed like a regular Python list, but modules it contains are properly registered, and will be visible by all Module methods.
+
+```
+class MyModule(nn.Module):
+    def __init__(self):
+        super(MyModule, self).__init__()
+        self.linears = nn.ModuleList([nn.Linear(10, 10) for i in range(10)])
+
+    def forward(self, x):
+        # ModuleList can act as an iterable, or be indexed using ints
+        for i, l in enumerate(self.linears):
+            x = self.linears[i // 2](x) + l(x)
+        return x
+```
