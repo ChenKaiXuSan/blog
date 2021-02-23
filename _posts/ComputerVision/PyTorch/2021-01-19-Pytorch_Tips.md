@@ -211,3 +211,52 @@ class MyModule(nn.Module):
             x = self.linears[i // 2](x) + l(x)
         return x
 ```
+
+### 2021年02月16日 15:08:08
+##### torch.nn.init.uniform_(tensor, a=0.0, b=1.0)
+Fills the input Tensor with values drawn from the uniform distribution
+$$ \mathcal{U}(a, b) $$
+```
+>>> w = torch.empty(3, 5)
+>>> nn.init.uniform_(w)
+```
+
+##### torch.nn.init.constant_(tensor, val)
+Fills the input Tensor with the value $ \text{val} $.
+```
+>>> w = torch.empty(3, 5)
+>>> nn.init.constant_(w, 0.3)
+```
+
+##### torch.pow(input, exponent, *, out=None) → Tensor
+Takes the power of each element in input with exponent and returns a tensor with the result.
+
+exponent can be either a single float number or a Tensor with the same number of elements as input.
+
+When exponent is a scalar value, the operation applied is:
+$$
+\text{out}_i = x_i ^ \text{exponent}
+​$$
+ 
+When exponent is a tensor, the operation applied is:
+$$
+\text{out}_i = x_i ^ {\text{exponent}_i}
+​$$
+
+When exponent is a tensor, the shapes of input and exponent must be broadcastable.
+```
+>>> a = torch.randn(4)
+>>> a
+tensor([ 0.4331,  1.2475,  0.6834, -0.2791])
+>>> torch.pow(a, 2)
+tensor([ 0.1875,  1.5561,  0.4670,  0.0779])
+>>> exp = torch.arange(1., 5.)
+
+>>> a = torch.arange(1., 5.)
+>>> a
+tensor([ 1.,  2.,  3.,  4.])
+>>> exp
+tensor([ 1.,  2.,  3.,  4.])
+>>> torch.pow(a, exp)
+tensor([   1.,    4.,   27.,  256.])
+```
