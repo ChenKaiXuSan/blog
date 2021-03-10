@@ -260,3 +260,21 @@ tensor([ 1.,  2.,  3.,  4.])
 >>> torch.pow(a, exp)
 tensor([   1.,    4.,   27.,  256.])
 ```
+
+### 2021年03月01日 13:57:18
+##### torch.clamp(input, min, max, *, out=None) → Tensor
+Clamp all elements in input into the range [ min, max ] and return a resulting tensor:
+
+$$
+y_i = \begin{cases} \text{min} & \text{if } x_i < \text{min} \\ x_i & \text{if } \text{min} \leq x_i \leq \text{max} \\ \text{max} & \text{if } x_i > \text{max} \end{cases}
+$$
+
+```
+>>> a = torch.randn(4)
+>>> a
+tensor([-1.7120,  0.1734, -0.0478, -0.0922])
+>>> torch.clamp(a, min=-0.5, max=0.5)
+tensor([-0.5000,  0.1734, -0.0478, -0.0922])
+```
+
+也可以使用x.data.clamp()的形式
