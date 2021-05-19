@@ -54,10 +54,10 @@ header:
       # @end locale config
     url: /about.html
 
-  - titles:
-      en : &EN Everyday
-      zh : &ZH_HANS 每日一笔
-    url: /2020/08/03/每日一笔
+  # - titles:
+  #     en : &EN Everyday
+  #     zh : &ZH_HANS 每日一笔
+  #   url: /2020/08/03/每日一笔
 
 
 docs-en:
