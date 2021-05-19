@@ -36,7 +36,7 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 author:
   type      : person # "person" (default), "organization"
   name      : chenkaixu
-  url       : https://chenkaixusan.github.io/blog/
+  url       : https://github.com/ChenKaiXuSan
   avatar    : image/卡通头像.jpg # path or url of avatar image (square)
   bio       : 图像处理入门者，日本金泽大学留学中。  
               心之所向，即是光明。  
