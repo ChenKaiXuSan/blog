@@ -1,6 +1,6 @@
 ---
 title: Linux commands
-tags: [ComputerVision, PyTorch]
+tags: [Linux]
 ---
 
 记录使用过的Linux的命令。

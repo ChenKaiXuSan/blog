@@ -38,8 +38,7 @@ author:
   name      : chenkaixu
   url       : https://github.com/ChenKaiXuSan
   avatar    : image/卡通头像.jpg # path or url of avatar image (square)
-  bio       : 图像处理入门者，日本金泽大学留学中。  
-              心之所向，即是光明。  
+  bio       : 图像处理入门者，日本金泽大学留学中。
   email     : chenkaixusan@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -52,7 +51,6 @@ author:
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
   github    : https://github.com/ChenKaiXuSan
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
-  # zhihu     : https://www.instagram.com/kaixu_chen/
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
