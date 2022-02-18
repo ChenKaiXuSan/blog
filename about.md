@@ -1,14 +1,52 @@
 ---
 layout: article
 key: page-about
-lang: zh
+lang: en
 author: author
 ---
+# About me
 
-写一些自己的故事，记录在日本的幸福~~苦逼修士~~生活。  
-关于自己，关于生活。  
-希望生活能善待我。
+Hello!
+My name is KaiXu Chen(陈凯旭), an international student from China.
+Now, I am a **Ph.D. Student** in Department of Intelligent Technologies (IIT), University of Tsukuba.
 
+## Education
+
+- 2022.04 ~ present | Ph.D. Student
+Department of Intelligent Interaction Technologies (IIT),
+University of Tsukuba, Japan
+
+- 2020.04 ~ 2022.03 | Master Student
+Graduate School of Engineering Science,
+Kanazawa University, Japan
+
+- 2014.09 ~ 2018.06 | Bachelor Student
+College of Computer Science and Technology,
+InnerMongolia University of Technology, China
+
+## Research
+
+- computer vision
+- deep neural network
+- Generative Adversarial Network
+- Medical Images
+- I also want to making Neural Networks compute faster than faster
+
+## Language Skills
+
+- **Simple Chinese - Mother tongue**
+- English - speak
+- Japanese - Great
+
+## Hobby
+
+- Bike
+- Sport
+  - swimming
+  - running
+- game
+- anime
+  
 ## 关于我
 
 - 会很自律，也有用乐观的心态看这个缤纷的世界。  
@@ -21,15 +59,13 @@ author: author
 - 有认真的跑步，进行健身三大项，卧推、硬拉、深蹲。
 - 想骑着摩托车环绕日本岛!!!
 
-目前，日本金泽大学M2闭关修炼中。
-在研究图像生成方面（GAN）
 有认真的学习深度学习，虽然看不太懂。
 {:.info}
 
 ## 关于博客
 
 其实，一开始搭建网站的时候，是想写一个技术性博客的。  
-因为我毕竟大学专攻JavaEE，虽然计算机知识学习了不少，但是用的最熟练的还是当属服务器的搭建和配置。  
+因为我毕竟大学专攻JavaEE，虽然计算机知识学习了不少，但是用的最熟练的还是当属服务器的搭建和配置，以及网页的前后端开发。  
 以前的时候写过一些技术性总结，当然都是方便自己日后查阅的。没想到后来热衷于写电子文章，很享受手指敲击键盘的感觉。  
 现在还记着大学的时候，为了提高打字速度专门学了一段时间的五笔输入法。后来发现随着技术的成长，拼音的输入速度一点也不输给五笔，继而直接放弃五笔转投拼音的怀抱当中。  
 也还记着当时专门上网找了键盘使用的手势，包括每个手指应该摁哪一些按键的操作。然后又找了个专门的网站输入英文文章来提高打字速度。现在看来，虽然很有用，但多半还是无聊的产物吧。  
@@ -41,12 +77,3 @@ author: author
 
 网站我应该也是会接着写，文章也会写更多。  
 现在文笔水平虽然很菜，但是我相信只要写的多了，总会变好的。
-
-## 关于未来网站建设的预想
-
-- [x] ~~感觉应该建立一个记录心情的页面，来记录一下每日的心情。~~ `success`{:.success}
-  - 记录在每日一笔，直接粗暴的放在导航栏。
-  - 已经废弃，不想在这上面写日记了。果然日记还是要自己给自己看，太羞耻了。
-
-- [ ] 之前看到的3Dlive感觉也很不错，找时间搞一下。  
-- [ ] 开的坑越来越多，找时间填填坑了应该。
