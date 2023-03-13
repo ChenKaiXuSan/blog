@@ -4,6 +4,7 @@ key: page-about
 lang: en
 author: author
 ---
+
 # About me
 
 Hello!
@@ -32,6 +33,22 @@ InnerMongolia University of Technology, China
 - Medical Images
 - I also want to making Neural Networks compute faster than faster
 
+## Professional Skills
+
+- Python
+- Java
+
+- Pytorch
+- PytorchVideo
+- PytorchLightning 
+- Hugging Face
+
+- pandas, skt-learn
+- docker
+- linux
+- matplotlib
+- seaborn
+
 ## Language Skills
 
 - **Simple Chinese - Mother tongue**
@@ -46,21 +63,6 @@ InnerMongolia University of Technology, China
   - running
 - game
 - anime
-  
-## 关于我
-
-- 会很自律，也有用乐观的心态看这个缤纷的世界。  
-- 从来不想做让自己后悔的事情。  
-- 文笔不是很好，但是却有一颗写东西的心。也在坚持写着很垃圾的文章。
-- 偶尔会看一些奇奇怪怪的东西，对书的兴趣时好时坏，知道应该不停的充电来充实自己，但是有的时候想法却很懒惰，不想动脑子去思考问题。  
-- 每天会对自身进行总结，也会写日记。正所谓吾日三省吾身，虽然没有什么长进罢了。
-- 喜欢新奇的东西，非常喜欢电子产品。对于电子产品的投入不计回报，只要是喜欢的，一定会买到手。  
-- 想要成为有趣的人！培养很多兴趣爱好！！
-- 有认真的跑步，进行健身三大项，卧推、硬拉、深蹲。
-- 想骑着摩托车环绕日本岛!!!
-
-有认真的学习深度学习，虽然看不太懂。
-{:.info}
 
 ## 关于博客
 
