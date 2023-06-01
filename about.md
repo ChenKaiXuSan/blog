@@ -58,13 +58,13 @@ InnerMongolia University of Technology, China
 ## Hobby
 
 - Bike
-- Sport
+- Sports
   - swimming
   - running
 - game
 - anime
 
-## 关于博客
+<!-- ## 关于博客
 
 其实，一开始搭建网站的时候，是想写一个技术性博客的。  
 因为我毕竟大学专攻JavaEE，虽然计算机知识学习了不少，但是用的最熟练的还是当属服务器的搭建和配置，以及网页的前后端开发。  
@@ -78,4 +78,4 @@ InnerMongolia University of Technology, China
 不过偶尔吐槽和记录一下生活我觉得也是极好的。就希望不要忘了GitHub的账号吧（我觉得因该不会忘的，毕竟代码都在这里）
 
 网站我应该也是会接着写，文章也会写更多。  
-现在文笔水平虽然很菜，但是我相信只要写的多了，总会变好的。
+现在文笔水平虽然很菜，但是我相信只要写的多了，总会变好的。 -->
