@@ -17,9 +17,39 @@ link: https://docs.python.org/zh-cn/3.10/library/itertools.html
 - repeat()
 
 
-## count 
+## count(start=0, step=1)
 
+Make an iterator that returns evenly spaced values starting with number start.
 
+```
+count(10) --> 10 11 12 13 14 ...
+```
+
+# 根据最短输入序列长度停止的迭代器
+
+- groupby()
+
+## groupby(iterable, key=None)
+
+创建一个迭代器，返回 iterable 中连续的键和组。key 是一个计算元素键值函数。如果未指定或为 None，key 缺省为恒等函数（identity function），返回元素不变。一般来说，iterable 需用同一个键值函数预先排序。
+
+```
+import itertools
+
+groups = []
+uniquekeys = []
+data = sorted('AAAABBBCCDAABBB')
+for k, g in itertools.groupby(data):
+    groups.append(list(g))
+    uniquekeys.append(k)
+
+print(uniquekeys)
+print(groups)
+
+['A', 'B', 'C', 'D']
+[['A', 'A', 'A', 'A', 'A', 'A'], ['B', 'B', 'B', 'B', 'B', 'B'], ['C', 'C'], ['D']]
+
+```
 # 排列组合迭代器
 
 - product()
