@@ -1,6 +1,5 @@
 ---
-title: Computer Vision-Based Approach for Quantifying Occupational
-Therapists’ Qualitative Evaluations of Postural Control
+title: Computer Vision-Based Approach for Quantifying Occupational Therapists’ Qualitative Evaluations of Postural Control
 tags: [Paper, medical, Hindiwi]
 ---
 
