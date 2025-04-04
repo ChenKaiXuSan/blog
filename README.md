@@ -1,34 +1,42 @@
-# 旭的博客
+# Chen's Blog
 
-#### Author: Xu
-这里是chenkaixu的博客。  
-记录一些心情，记录一些生活的琐事。  
+Welcome to my personal blog.  
+Here, I write about everyday thoughts, life moments, and whatever else I feel like sharing.
 
-托管在GitHub pages上，模板fork自[TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme)
+This site is hosted on **GitHub Pages** and originally forked from the excellent [TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme).
 
-自己进行了一些改进，之后有时间的话准备在这个基础上开发自己的网站。  
-谢谢作者提供的模板。
+I've made some personal modifications, and someday I plan to build my own theme based on this foundation.  
+Many thanks to the original author for providing such a great starting point.
 
-## Tips
-- 运行命令
-```
-bundle exec jekyll server
-```
+---
 
-- 运行后可以看到草稿
-```
-bundle exec jekyll server --drafts
-```
-- 当在Gemfile里面添加新的插件时。
-```
-rm Gemfile.lock
-bundle install
-```
-安装新添加的插件。
+## 🛠️ Tips & Notes
 
-- 启用gitalk的时候，需要给每个博客在YAML信息里面添加key值，而且不能重复。本地运行时不会显示评论，只有上传之后才能看到。
-```
-    https://github.com/ChenKaiXuSan/blog
-    例如，上面这样的仓库网址。
-    ChenKaiXuSan是owner。GitHub repo是blog。这样配置才对
-```
+- Start the local development server:
+  ```bash
+  bundle exec jekyll server
+  ```
+
+- To preview draft posts locally:
+  ```bash
+  bundle exec jekyll server --drafts
+  ```
+
+- When adding new plugins to the `Gemfile`, run the following:
+  ```bash
+  rm Gemfile.lock
+  bundle install
+  ```
+
+- If you're using **Gitalk** for comments, make sure each post includes a unique `key` in the YAML front matter.  
+  Note: Comments won't show when running locally — they only appear after deploying the site.
+
+  Example repository settings:
+  ```
+  Repository URL: https://github.com/ChenKaiXuSan/blog
+  Owner: ChenKaiXuSan
+  Repo Name: blog
+  ```
+  Be sure to set these correctly in your Gitalk configuration.
+
+---
