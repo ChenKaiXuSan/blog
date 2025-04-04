@@ -5,8 +5,6 @@ lang: en
 author: author
 ---
 
-# About Me
-
 I am **KaiXu Chen (陳凱旭)**, a researcher at the [**Center for Computational Sciences (CCS)**](https://www.ccs.tsukuba.ac.jp/eng/), University of Tsukuba, Japan. 
 I earned my Ph.D. in Engineering in 2025 at the University of Tsukuba under the supervision of **Prof. Yoshihiro Kuroda** in the [Life Engineering Lab](https://www.lelab.jp/).
 
