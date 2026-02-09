@@ -2,7 +2,7 @@
 
 **个人学术博客网站 / Personal Academic Blog and Portfolio**
 
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fchenkaixusan.github.io%2Facademic_blog%2F)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fchenkaixusan.github.io%2F)
 [![GitHub Pages](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment)
 
 这是一个基于 Jekyll 和 Academic Pages 模板构建的个人学术网站，用于展示研究成果、学术出版物和博客文章。
@@ -11,7 +11,7 @@ This is a personal academic website built with Jekyll and the Academic Pages tem
 
 ## 🌐 Website
 
-访问网站 / Visit the website: [https://chenkaixusan.github.io/academic_blog/](https://chenkaixusan.github.io/academic_blog/)
+访问网站 / Visit the website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
 
 ## 👤 About
 
@@ -105,7 +105,7 @@ This repository was forked from the [Minimal Mistakes Jekyll Theme](https://mmis
 
 ## 🔗 Links
 
-- 🌐 Website: [https://chenkaixusan.github.io/academic_blog/](https://chenkaixusan.github.io/academic_blog/)
+- 🌐 Website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
 - 👨‍💼 LinkedIn: [chenkaixusan](https://linkedin.com/in/chenkaixusan)
 - 🐙 GitHub: [@ChenKaiXuSan](https://github.com/ChenKaiXuSan)
 - 🎓 Google Scholar: [Profile](https://scholar.google.com/citations?user=kpNboagAAAAJ&hl=zh-CN)
