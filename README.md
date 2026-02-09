@@ -1,27 +1,49 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Kaixu Chen's Academic Blog
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+**个人学术博客网站 / Personal Academic Blog and Portfolio**
 
-# Getting Started
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fchenkaixusan.github.io%2F)
+[![GitHub Pages](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment)
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+这是一个基于 Jekyll 和 Academic Pages 模板构建的个人学术网站，用于展示研究成果、学术出版物和博客文章。
 
-See more info at https://academicpages.github.io/
+This is a personal academic website built with Jekyll and the Academic Pages template, showcasing research work, academic publications, and blog posts.
 
-## Running locally
+## 🌐 Website
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+访问网站 / Visit the website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
 
-1. Clone the repository and made updates as detailed above.
+## 👤 About
 
-### Using a different IDE
+我是陈凯旭（Kaixu Chen），筑波大学的研究员，专注于 AI、深度学习和机器学习在视频和图像处理中的应用。
+
+I am Kaixu Chen, a researcher at the University of Tsukuba, specializing in the application of AI, DL, and ML to video and image processing.
+
+## 📚 Content
+
+本网站包含以下内容 / This website includes:
+
+- 📝 Research Publications / 研究出版物
+- 💡 Blog Posts / 博客文章
+- 👨‍🔬 Research Projects / 研究项目
+- 📊 Academic CV / 学术简历
+
+## 🛠️ Technology Stack
+
+- **Static Site Generator**: Jekyll
+- **Template**: Academic Pages
+- **Hosting**: GitHub Pages
+- **Languages**: HTML, CSS, JavaScript, Markdown
+
+## 🚀 Development Setup
+
+### Local Development
+
+### Prerequisites (先决条件)
+
+1. Clone the repository and make updates as detailed above.
+
+### Using IDE (使用 IDE)
 1. Make sure you have ruby-dev, bundler, and nodejs installed
     
     On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
@@ -54,7 +76,7 @@ When you are initially working on your website, it is very useful to be able to 
 
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
-## Using Docker
+## 🐳 Using Docker
 
 Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
 
@@ -67,30 +89,30 @@ docker compose up
 
 You should now be able to access the website from `localhost:4000`.
 
-### Using the DevContainer in VS Code
+### 💻 Using DevContainer in VS Code (在 VS Code 中使用开发容器)
 
 If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
 
-# Maintenance
+## 📝 Contributing
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+本项目基于 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 模板。如需了解更多信息，请访问原始模板仓库。
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+This project is based on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template. For more information, please visit the original template repository.
 
-## Bugfixes and enhancements
+## 📄 License
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+This repository was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE file).
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## 🔗 Links
+
+- 🌐 Website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
+- 👨‍💼 LinkedIn: [chenkaixusan](https://linkedin.com/in/chenkaixusan)
+- 🐙 GitHub: [@ChenKaiXuSan](https://github.com/ChenKaiXuSan)
+- 🎓 Google Scholar: [Profile](https://scholar.google.com/citations?user=kpNboagAAAAJ&hl=zh-CN)
+- 🆔 ORCID: [0009-0003-8698-8899](https://orcid.org/0009-0003-8698-8899)
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
+<div align="center">
+Made with ❤️ using Jekyll and GitHub Pages
 </div>
