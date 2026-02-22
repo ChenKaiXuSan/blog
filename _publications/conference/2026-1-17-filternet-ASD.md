@@ -6,8 +6,8 @@ permalink: /publication/filternet-ASD-2026/
 # excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2026-1-17
 venue: 2026 International Conference on Electronics, Information, and Communication (ICEIC)
-# paperurl: https://dl.acm.org/doi/full/10.1145/3757373.3763768
-# citation: 'Xu J, Chen K, Kuroda Y, et al. Feel What You See: A Novel Sensory Interface Linking Visual Heat Cues and Instant Thermal Feedback[M]//Proceedings of the SIGGRAPH Asia 2025 Emerging Technologies. 2025: 1-2.'
+paperurl: https://ieeexplore.ieee.org/document/11386438
+citation: 'K. Chen et al., "FilterNet: A Filtered Gait Motion Fusion Network for Classifying Adult Spinal Deformity," 2026 International Conference on Electronics, Information, and Communication (ICEIC), Macau, China, 2026, pp. 1-6, doi: 10.1109/ICEIC69189.2026.11386438.'
 ---
 
 Analyzing periodic human motion from videos is

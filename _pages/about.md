@@ -29,6 +29,7 @@ You can find more details about my research and publications on the [Research](.
 - **Attention-guided multimodal fusion**: combining RGB, optical flow, keypoints, and domain priors for better interpretability  
 
 ## 🔥 News
+- Received 令和8年度A期HPCIシステム利用研究課題募集
 - 1 paper accepted by SPIE Medical Imaging 2026 as oral.
 - 1 paper accepted by ICEIC 2026 as poster.
 - 1 paper accepted by SIGGRAPH Asia 2025 Emerging Technologies.
