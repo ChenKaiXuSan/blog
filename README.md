@@ -11,7 +11,7 @@ This is a personal academic website built with Jekyll and the Academic Pages tem
 
 ## 🌐 Website
 
-访问网站 / Visit the website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
+访问网站 / Visit the website: [https://chenkaixusan.github.io/blog/](https://chenkaixusan.github.io/blog/)
 
 ## 👤 About
 
