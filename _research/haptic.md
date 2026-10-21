@@ -1,19 +1,16 @@
 ---
-title: "Haptic Technology & AI Research"
-excerpt: This research explores intelligent haptic feedback systems that integrate sensing and AI to support intuitive human–machine interaction in medical, sports, and interactive environments.
+title: "Haptic & Multisensory Interaction"
+excerpt: "Collaborative work on intelligent interfaces that connect visual content with thermal and tactile experiences."
 collection: research
+order: 4
 ---
 
-## Haptic Research Overview
+## Research Overview
 
-This research focuses on **haptic interaction and tactile feedback systems** that enable intuitive and reliable communication between humans and intelligent machines. By integrating **haptic devices**, **sensor-based perception**, and **artificial intelligence**, the work aims to design feedback mechanisms that convey rich physical information through touch.
+Alongside my work in computer vision, I collaborate on **multisensory human–computer interaction**. These projects explore how computer vision and learned visual semantics can drive physical feedback, extending video experiences beyond sight and sound.
 
-A key challenge addressed in this research is the **mapping between perception and sensation**. Complex environmental states, human motion, or system outputs must be translated into meaningful haptic cues that are perceptually interpretable and responsive. To this end, the research explores **data-driven haptic encoding strategies**, where visual, motion, or force-related information is transformed into adaptive tactile feedback.
+A representative project is **Feel What You See**, an interactive system that interprets visual heat cues and produces corresponding non-contact thermal feedback. It illustrates how recognition of visual content can support a responsive multisensory interface.
 
-Technically, the research investigates **closed-loop haptic systems** that combine real-time sensing, intelligent decision-making, and feedback generation. Machine learning models are employed to adapt haptic responses based on user state, task context, and environmental uncertainty, enabling more effective guidance, training, and interaction.
+### Publication
 
-The ultimate goal is to develop **human-centered haptic interfaces** that enhance perception, motor learning, and safety across applications such as **medical assistance, sports training, and human–machine collaboration**.
-
-## Research Lists
-
-1. Xu J, **Chen K**, Kuroda Y, et al. Feel What You See: A Novel Sensory Interface Linking Visual Heat Cues and Instant Thermal Feedback[M]//Proceedings of the SIGGRAPH Asia 2025 Emerging Technologies. 2025: 1-2. [Link](/publication/feel-what-you-see-2025)
+- Xu J, **Chen K**, Kuroda Y, et al. [*Feel What You See: A Novel Sensory Interface Linking Visual Heat Cues and Instant Thermal Feedback*](https://doi.org/10.1145/3757373.3763768). *SIGGRAPH Asia 2025 Emerging Technologies*, 2025.

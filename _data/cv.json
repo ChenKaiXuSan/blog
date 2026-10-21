@@ -1,152 +1,165 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Kaixu Chen",
+    "email": "chenkaixusan@gmail.com",
+    "website": "https://chenkaixusan.github.io/blog/",
+    "summary": "Researcher at the Center for Computational Sciences, University of Tsukuba. Research interests include computer vision, video-based clinical gait assessment, sports motion analytics, and multi-view 3D human pose estimation.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Tsukuba",
+      "countryCode": "JP",
+      "region": "Ibaraki"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=kpNboagAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0003-8698-8899"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "ChenKaiXuSan",
+        "url": "https://github.com/ChenKaiXuSan"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "University of Tsukuba",
+      "position": "Researcher, Center for Computational Sciences",
+      "startDate": "2025-04-01",
+      "summary": "Research on video understanding, clinical gait analysis, and multi-view 3D human motion."
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "GHELIA Inc.",
+      "position": "Artificial Intelligence Intern",
+      "startDate": "2023-06-01",
+      "endDate": "2025-04-01"
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "RICOH Company, Ltd.",
+      "position": "Artificial Intelligence Intern",
+      "startDate": "2024-02-01",
+      "endDate": "2024-04-01"
+    },
+    {
+      "company": "Toshiba Corporation",
+      "position": "Artificial Intelligence Intern",
+      "startDate": "2023-08-01",
+      "endDate": "2023-10-01"
+    },
+    {
+      "company": "Rakuten Group, Inc.",
+      "position": "Web Application Engineer (Intern)",
+      "startDate": "2023-07-01",
+      "endDate": "2023-08-01"
+    },
+    {
+      "company": "Accenture (Shanghai)",
+      "position": "Java Software Engineer",
+      "startDate": "2018-07-01",
+      "endDate": "2019-04-01"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "University of Tsukuba",
+      "area": "Engineering (IMIS)",
+      "studyType": "Ph.D.",
+      "startDate": "2022-04-01",
+      "endDate": "2025-03-31"
+    },
+    {
+      "institution": "Kanazawa University",
+      "area": "Engineering",
+      "studyType": "M.Eng.",
+      "startDate": "2020-04-01",
+      "endDate": "2022-03-31"
+    },
+    {
+      "institution": "Inner Mongolia University of Technology",
+      "area": "Computer Science and Technology",
+      "studyType": "B.Eng.",
+      "startDate": "2014-09-01",
+      "endDate": "2018-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Computer Vision and Machine Learning",
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "PyTorch Lightning",
+        "Human Motion Analysis",
+        "3D Pose Estimation",
+        "Medical Video Analysis",
+        "Linux",
+        "Docker"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese (Mandarin)",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Clinical gait analysis"
+    },
+    {
+      "name": "Multi-view 3D human pose estimation"
+    },
+    {
+      "name": "Sports analytics"
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Clinical knowledge-guided attention for gait-based adult spinal deformity assessment from monocular video",
+      "publisher": "Journal of Medical Imaging",
+      "releaseDate": "2026-10-08",
+      "website": "https://doi.org/10.1117/1.JMI.13.5.054002"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Incision trajectory tracing for electrosurgical navigation by CNN-based knife contacting frames extraction method",
+      "publisher": "Computer Methods and Programs in Biomedicine",
+      "releaseDate": "2026-08-19",
+      "website": "https://doi.org/10.1016/j.cmpb.2026.109612"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "CanonFuse3D: Human-Centric Canonical Fusion for Calibration-Free Dual-View 3D Pose Estimation in Skiing Videos",
+      "publisher": "MMSports 2026 (accepted)",
+      "releaseDate": "2026-08-12",
+      "website": "https://openreview.net/forum?id=3wYSjU8saK"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "PhaseMix: A Periodic Motion Fusion Method for Adult Spinal Deformity Classification",
+      "publisher": "IEEE Access",
+      "releaseDate": "2024-10-11",
+      "website": "https://ieeexplore.ieee.org/document/10714330"
+    },
+    {
+      "name": "Two-stage video-based convolutional neural networks for adult spinal deformity classification",
+      "publisher": "Frontiers in Neuroscience",
+      "releaseDate": "2023-12-11",
+      "website": "https://doi.org/10.3389/fnins.2023.1278584"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

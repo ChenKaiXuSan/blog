@@ -26,15 +26,15 @@ Education
   College of Computer Science and Technology,  
   Inner Mongolia University of Technology, China
 
-Work experience
+Professional Experience
 ======
-### Postdoctoral Researcher  
-**University of Tsukuba** — Japan  
-*Apr 2025 – Present* | Hybrid
+### Researcher — Center for Computational Sciences
+**University of Tsukuba** — Japan
+*Apr 2025 – Present*
 
-- Conduct postdoctoral research in **artificial intelligence and computer vision**.
-- Focus on **human motion analysis, video understanding, and AI-based modeling**.
-- Collaborate in interdisciplinary research environments and contribute to academic publications.
+- Develop **computer vision and deep learning** methods for clinical gait analysis, sports motion analysis, and multi-view 3D human pose estimation.
+- Study **calibration-free dual-view pose fusion** for moving-camera videos and interpretable, clinically guided recognition of human motion.
+- Collaborate with researchers in computer vision, orthopedics, and human–computer interaction.
 
 ---
 
@@ -86,6 +86,13 @@ Work experience
 - Involved in **Java development and IT infrastructure-related systems**.
 - Gained foundational experience in professional software development.
   
+## Research Highlights
+
+- **Clinical gait assessment:** Video-based adult spinal deformity analysis using spatiotemporal learning, periodic motion fusion, and clinician-informed attention (*Frontiers in Neuroscience* 2023; *IEEE Access* 2024; *Journal of Medical Imaging* 2026).
+- **3D human pose estimation:** Human-centric, calibration-free fusion of dual-view pose streams for outdoor skiing analysis (*MMSports 2026*, accepted).
+- **Medical navigation:** Co-authored work on CNN-based detection of surgical tool–tissue contact for incision trajectory tracing (*Computer Methods and Programs in Biomedicine* 2026).
+- **Driver behavior:** Multi-view analysis of compensatory head movement under simulated visual-field restrictions (ongoing research).
+
 ## Professional Skills
 
 - **Programming Languages**: Python, Java  

@@ -5,10 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
+My research develops practical, interpretable computer vision methods for understanding human motion from video. The projects below cover clinical analysis, multi-view 3D reconstruction, driving behavior, and multisensory interaction.
+
 {% include base_path %}
 
-
-{% for post in site.research %}
+{% assign ordered_research = site.research | sort: "order" %}
+{% for post in ordered_research %}
   {% include archive-single.html %}
 {% endfor %}
-
