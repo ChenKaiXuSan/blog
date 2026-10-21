@@ -1,0 +1,43 @@
+name: Validate academic website
+
+on:
+  push:
+    branches:
+      - academic-lite
+  pull_request:
+    branches:
+      - academic-lite
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and smoke-test Jekyll
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build site
+        run: bundle exec jekyll build --destination _site
+      - name: Validate essential pages and links
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s _site/index.html
+          test -s _site/publications/index.html
+          test -s _site/research/index.html
+          test -s _site/cv/index.html
+          test -s _site/assets/js/site.js
+          test -s _site/assets/css/main.css
+          grep -q 'CanonFuse3D' _site/index.html
+          grep -q 'Journal Articles' _site/publications/index.html
+          if grep -q 'assets/js/main.min.js' _site/index.html; then
+            echo 'Legacy JS bundle is still loaded on homepage' >&2
+            exit 1
+          fi
