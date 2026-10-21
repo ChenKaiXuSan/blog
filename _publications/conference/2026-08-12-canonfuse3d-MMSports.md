@@ -1,7 +1,5 @@
 ---
 title: "CanonFuse3D: Human-Centric Canonical Fusion for Calibration-Free Dual-View 3D Pose Estimation in Skiing Videos"
-featured: true
-featured_rank: 2
 collection: publications
 category: conferences
 permalink: /publication/canonfuse3d-mmsports-2026/

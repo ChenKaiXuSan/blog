@@ -9,48 +9,118 @@ redirect_from:
 
 {% include base_path %}
 
-## Research Profile
+<img src="../images/self_photo.jpg" alt="Self Photo" width="300"/>
 
-Researcher at the **Center for Computational Sciences, University of Tsukuba**. My research covers computer vision, deep learning, human motion analysis, medical gait assessment, and multi-view 3D human pose estimation.
+Education
+======
 
-## Education
+- **2022.04 ~ 2025.03** | Ph.D. in Engineering  
+  International Master’s/Doctoral Program in Intelligent and Mechanical Interaction Systems (IMIS),  
+  University of Tsukuba, Japan
 
-- **Ph.D. in Engineering**, University of Tsukuba, Japan (Apr 2022 – Mar 2025). International Master's/Doctoral Program in Intelligent and Mechanical Interaction Systems (IMIS). Supervisor: Prof. Yoshihiro Kuroda.
-- **M.Eng.**, Kanazawa University, Japan (Apr 2020 – Mar 2022).
-- **B.Eng. in Computer Science and Technology**, Inner Mongolia University of Technology, China (Sep 2014 – Jun 2018).
+- **2020.04 ~ 2022.03** | M.Eng. in Engineering  
+  Graduate School of Engineering Science,  
+  Kanazawa University, Japan
 
-## Professional Experience
+- **2014.09 ~ 2018.06** | B.Eng. in Computer Science and Technology  
+  College of Computer Science and Technology,  
+  Inner Mongolia University of Technology, China
 
-- **Researcher**, Center for Computational Sciences, University of Tsukuba (Apr 2025 – Present). Video-based clinical gait analysis, interpretable motion models, and multi-view 3D human motion for sports analysis.
-- **AI Intern**, GHELIA Inc. (Jun 2023 – Apr 2025). Research and development in computer vision and pattern recognition.
-- **AI Intern**, RICOH Company, Ltd. (Feb – Apr 2024). Applied computer vision and machine learning research.
-- **AI Intern**, Toshiba Corporation (Aug – Oct 2023). Applied AI and computer vision prototyping.
-- **Web Application Engineer Intern**, Rakuten Group, Inc. (Jul – Aug 2023). Web application development.
-- **Java Software Engineer**, Accenture, Shanghai (Jul 2018 – Apr 2019). Enterprise software development.
+Professional Experience
+======
+### Researcher — Center for Computational Sciences
+**University of Tsukuba** — Japan
+*Apr 2025 – Present*
 
+- Develop **computer vision and deep learning** methods for clinical gait analysis, sports motion analysis, and multi-view 3D human pose estimation.
+- Study **calibration-free dual-view pose fusion** for moving-camera videos and interpretable, clinically guided recognition of human motion.
+- Collaborate with researchers in computer vision, orthopedics, and human–computer interaction.
+
+---
+
+### Artificial Intelligence Intern  
+**GHELIA Inc.** — Japan  
+*Jun 2023 – Apr 2025* | Hybrid
+
+- Worked on **computer vision and pattern recognition** tasks.
+- Developed and experimented with AI models for real-world applications.
+- Gained hands-on experience in **industry-oriented AI development workflows**.
+
+---
+
+### Artificial Intelligence Intern  
+**RICOH Company, Ltd.** — Japan  
+*Feb 2024 – Apr 2024* | Hybrid
+
+- Participated in short-term R&D projects focused on **computer vision**.
+- Implemented and evaluated machine learning models for **pattern recognition** tasks.
+- Collaborated with corporate research teams.
+
+---
+
+### Artificial Intelligence Intern  
+**Toshiba Corporation** — Japan  
+*Aug 2023 – Oct 2023* | Hybrid
+
+- Worked on **AI and computer vision** projects using **Python and PyTorch**.
+- Supported model development and experimentation for applied AI tasks.
+- Gained experience in large-scale corporate R&D environments.
+
+---
+
+### Web Application Engineer (Intern)  
+**Rakuten Group, Inc.** — Japan  
+*Jul 2023 – Aug 2023* | Remote
+
+- Developed and maintained **web applications**.
+- Contributed to backend/frontend software development in a production environment.
+- Gained experience with **software engineering practices** in a large tech company.
+
+---
+
+### Java Software Engineer  
+**Accenture (Shanghai)** — China  
+*Jul 2018 – Apr 2019* | On-site
+
+- Worked as a **Java software engineer** on enterprise-level projects.
+- Involved in **Java development and IT infrastructure-related systems**.
+- Gained foundational experience in professional software development.
+  
 ## Research Highlights
 
-- **Clinical gait assessment:** Video-based adult spinal deformity classification with spatiotemporal modeling, periodic motion fusion, and clinical knowledge-guided attention.
-- **3D pose estimation:** Calibration-free, human-centric fusion of 3D pose streams from multiple moving camera views for outdoor skiing.
-- **Medical navigation:** Collaborative work on CNN-based identification of surgical tool–tissue contact for incision trajectory tracing.
-- **Driver behavior:** Multi-view analysis of compensatory head movement under simulated restricted visibility (ongoing research).
+- **Clinical gait assessment:** Video-based adult spinal deformity analysis using spatiotemporal learning, periodic motion fusion, and clinician-informed attention (*Frontiers in Neuroscience* 2023; *IEEE Access* 2024; *Journal of Medical Imaging* 2026).
+- **3D human pose estimation:** Human-centric, calibration-free fusion of dual-view pose streams for outdoor skiing analysis (*MMSports 2026*, accepted).
+- **Medical navigation:** Co-authored work on CNN-based detection of surgical tool–tissue contact for incision trajectory tracing (*Computer Methods and Programs in Biomedicine* 2026).
+- **Driver behavior:** Multi-view analysis of compensatory head movement under simulated visual-field restrictions (ongoing research).
 
-## Technical Skills
+## Professional Skills
 
-- **Programming:** Python, Java
-- **Machine learning:** PyTorch, PyTorch Lightning, scikit-learn, Hugging Face
-- **Computer vision:** Human pose estimation, multi-view geometry, video understanding, medical motion analysis
-- **Tools:** Linux, Docker, Git, pandas
+- **Programming Languages**: Python, Java  
+- **Deep Learning Frameworks**: PyTorch, PyTorchVideo, PyTorch Lightning, Hugging Face  
+- **Data Science**: pandas, scikit-learn  
+- **Tools & Platforms**: Docker, Linux, Matplotlib, Seaborn
 
-## Languages
+---
 
-Chinese (native) · English (fluent) · Japanese (advanced)
+## Language Proficiency
+
+- **Chinese (Mandarin)** – Native  
+- **English** – Fluent (speaking and writing)  
+- **Japanese** – Advanced (proficient in daily communication and academic reading/writing)
+
+---
+
+## Hobbies
+
+- Biking  
+- Swimming & Running  
+- Gaming  
+  - Overwatch 2  
+  - Diablo IV  
+  - Monster Hunter  
+- Anime
 
 ## Publications
-
-{% assign cv_papers = site.publications | sort: "date" | reverse %}
-<ul class="cv-publications">
-{% for paper in cv_papers %}
-  <li><a href="{{ base_path }}{{ paper.url }}">{{ paper.title }}</a>. <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}{% if paper.status == "accepted" %} (accepted){% endif %}.</li>
-{% endfor %}
-</ul>
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>

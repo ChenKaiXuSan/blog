@@ -5,16 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
-I focus on **computer vision and human motion understanding** for medical and real-world applications. Select a topic below for methods, applications, and related publications.
+My research develops practical, interpretable computer vision methods for understanding human motion from video. The projects below cover clinical analysis, multi-view 3D reconstruction, driving behavior, and multisensory interaction.
 
 {% include base_path %}
-{% assign topics = site.research | sort: "order" %}
-<div class="research-grid">
-{% for topic in topics %}
-  <article class="research-card">
-    <h3><a href="{{ base_path }}{{ topic.url }}">{{ topic.title }}</a></h3>
-    <p>{{ topic.excerpt }}</p>
-    <a class="research-more" href="{{ base_path }}{{ topic.url }}">Read more →</a>
-  </article>
+
+{% assign ordered_research = site.research | sort: "order" %}
+{% for post in ordered_research %}
+  {% include archive-single.html %}
 {% endfor %}
-</div>

@@ -1,6 +1,5 @@
 ---
 title: "FilterNet: A Filtered Gait Motion Fusion Network for Classifying Adult Spinal Deformity"
-codeurl: "https://github.com/ChenKaiXuSan/FilterNet_ASD_PyTorch"
 collection: publications
 category: conferences
 permalink: /publication/filternet-ASD-2026/
