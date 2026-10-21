@@ -35,7 +35,7 @@ See the full [Publications](./publications/) page or my [Google Scholar profile]
 - **Aug 2026** — Our electrosurgical navigation study was published online in *Computer Methods and Programs in Biomedicine*. [Article](https://doi.org/10.1016/j.cmpb.2026.109612)
 - **Aug 2026** — **CanonFuse3D** was accepted at *MMSports 2026*, co-located with ACM Multimedia 2026, with an oral presentation scheduled. [Paper](https://openreview.net/forum?id=3wYSjU8saK)
 - **Apr 2026** — Our clinical knowledge-guided attention framework appeared in *SPIE Medical Imaging 2026: Image Processing*. [Proceedings paper](https://doi.org/10.1117/12.3083822)
-- **Jan 2026** — **FilterNet** was presented at *ICEIC 2026*. [Paper](https://doi.org/10.1109/ICEIC69189.2026.11386438)
+- **Jan 2026** — **FilterNet** appeared in the *ICEIC 2026* proceedings. [Paper](https://doi.org/10.1109/ICEIC69189.2026.11386438)
 - **Dec 2025** — Co-authored *Feel What You See*, demonstrated at *SIGGRAPH Asia 2025 Emerging Technologies*. [Paper](https://doi.org/10.1145/3757373.3763768)
 
 *Last updated: October 2026.*
