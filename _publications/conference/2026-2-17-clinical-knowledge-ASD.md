@@ -3,11 +3,15 @@ title: "A clinical knowledge-guided attention framework for gait-based adult spi
 collection: publications
 category: conferences
 permalink: /publication/clinical-knowledge-ASD-2026/
-# excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2026-2-18
-venue: 2026 International Conference on Electronics, Information, and Communication (ICEIC)
-paperurl: https://spie.org/medical-imaging/presentation/A-clinical-knowledge-guided-attention-framework-for-gait-based-adult/13925-30
-# citation: 'Xu J, Chen K, Kuroda Y, et al. Feel What You See: A Novel Sensory Interface Linking Visual Heat Cues and Instant Thermal Feedback[M]//Proceedings of the SIGGRAPH Asia 2025 Emerging Technologies. 2025: 1-2.'
+date: 2026-02-18
+venue: "SPIE Medical Imaging 2026: Image Processing"
+paperurl: "https://doi.org/10.1117/12.3083822"
+excerpt: "Clinician-informed joint attention maps for gait-video classification and more interpretable adult spinal deformity analysis."
+citation: "Chen K, Asada T, Miura K, Kadone H, Sakashita K, Sunami T, Yamazaki M, Kuroda Y, Kitahara I. A clinical knowledge-guided attention framework for gait-based adult spinal deformity diagnosis. Proceedings of SPIE, vol. 13925, pp. 256–261 (2026). doi:10.1117/12.3083822."
 ---
 
-This research propose a framework that leverages clinical knowledge to guide gait classification for the automated diagnosis of Adult Spinal Deformity (ASD) using monocular gait videos. Existing models often overlook anatomically meaningful features, limiting their clinical applicability. This research introduce clinician-informed attention maps to encode expert knowledge about diagnostic joints and motion patterns. These maps guide the spatiotemporal focus of a CNN-based backbone to attend to clinically relevant cues. Experiments show that our approach improves both accuracy and interpretability over traditional baselines, demonstrating its potential as a non-invasive and explainable screening tool for ASD.
+This conference paper introduces a method that uses clinical knowledge to guide a video-based model toward diagnostically important anatomical regions during gait classification.
+
+We encode clinician-informed priors as joint-centered attention maps and integrate them into a spatiotemporal deep-learning pipeline. The goal is to improve both recognition accuracy and interpretability compared with models driven only by raw video features.
+
+**Links:** [SPIE proceedings paper](https://doi.org/10.1117/12.3083822) · [Code](https://github.com/ChenKaiXuSan/KnowledgeGuided-ASD_PyTorch)
