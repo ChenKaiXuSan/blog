@@ -65,7 +65,7 @@
         if (event.target.closest(".nav-links a")) closeNav(nav, navToggle);
       });
       window.addEventListener("resize", function () {
-        if (window.innerWidth > 720) closeNav(nav, navToggle);
+        if (window.innerWidth > 840) closeNav(nav, navToggle);
       });
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") closeNav(nav, navToggle);
