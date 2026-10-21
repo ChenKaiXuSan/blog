@@ -1,5 +1,8 @@
 ---
 title: "Clinical knowledge-guided attention for gait-based adult spinal deformity assessment from monocular video"
+featured: true
+featured_rank: 1
+codeurl: "https://github.com/ChenKaiXuSan/KnowledgeGuided-ASD_PyTorch"
 collection: publications
 category: journals
 permalink: /publication/clinical-knowledge-guided-jmi-2026/
