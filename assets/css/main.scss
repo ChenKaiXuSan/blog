@@ -35,7 +35,6 @@
     "layout/page",
     "layout/archive",
     "layout/sidebar",
-    "layout/json_cv",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
@@ -126,4 +125,34 @@ html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+
+/* Research and publication presentation — minimal modifications to the theme. */
+.home-intro { margin: 0 0 2rem; padding: 0.1rem 0 1.15rem; border-bottom: 1px solid var(--global-border-color); }
+.home-intro h1 { font-size: clamp(2rem, 4vw, 2.65rem); margin: 0.25rem 0 0.45rem; }
+.home-eyebrow { font-size: 0.85rem; color: var(--global-text-color-light); margin-bottom: 0.4rem; }
+.home-tagline { font-size: 1rem; font-weight: 600; }
+.home-action-links { display: flex; flex-wrap: wrap; gap: 0.45rem 1.1rem; margin: 1.35rem 0 0; }
+.home-action-links a { font-weight: 600; text-decoration: none; }
+.research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; margin: 1rem 0 1.75rem; }
+.research-card { min-width: 0; border: 1px solid var(--global-border-color); border-radius: 0.55rem; padding: 1rem; }
+.research-card h3 { margin: 0 0 0.55rem; font-size: 1.03rem; line-height: 1.35; }
+.research-card p { font-size: 0.88rem; margin: 0 0 0.6rem; line-height: 1.55; }
+.research-more { font-size: 0.85rem; font-weight: 600; }
+.featured-publication, .publication-item { border-bottom: 1px solid var(--global-border-color); padding: 0.95rem 0; }
+.featured-publication h3, .publication-item h3 { margin: 0 0 0.35rem; font-size: 1.02rem; line-height: 1.43; }
+.pub-venue { font-size: 0.83rem; color: var(--global-text-color-light); margin: 0 0 0.35rem; }
+.pub-citation { font-size: 0.83rem; margin: 0 0 0.55rem; line-height: 1.55; }
+.paper-links { display: flex; gap: 0.85rem; flex-wrap: wrap; margin: 0.35rem 0 0; font-size: 0.82rem; }
+.paper-links a { font-weight: 600; }
+.section-more { margin: 0.85rem 0 1.75rem; font-size: 0.9rem; }
+.news-list { list-style: none; padding-left: 0; margin: 0.8rem 0 1.2rem; }
+.news-list li { margin: 0 0 0.75rem; font-size: 0.9rem; }
+.news-date { color: var(--global-text-color-light); font-weight: 600; display: inline-block; min-width: 5.1rem; }
+.site-updated { font-size: 0.78rem; color: var(--global-text-color-light); margin-top: 1.8rem; }
+.cv-publications li { font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.6rem; }
+@media (max-width: 620px) {
+  .research-grid { grid-template-columns: minmax(0, 1fr); }
+  .news-date { display: block; }
 }

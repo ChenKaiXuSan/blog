@@ -7,35 +7,61 @@ redirect_from:
   - /about.html
 ---
 
-I am **Kaixu Chen (陈凯旭)**, a researcher at the [Center for Computational Sciences (CCS)](https://www.ccs.tsukuba.ac.jp/eng/), **University of Tsukuba**, Japan. I received my Ph.D. in Engineering from the University of Tsukuba in March 2025, where I worked with Prof. Yoshihiro Kuroda at the [Life Engineering Lab](https://www.lelab.jp/).
+{% include base_path %}
 
-My research lies at the intersection of **computer vision, deep learning, and human motion analysis**. I develop video-based methods for quantitative movement assessment, with applications in clinical gait analysis, sports analytics, and multi-view 3D human pose estimation. A recurring theme is making visual AI more **robust, interpretable, and practical outside controlled laboratory environments**.
+<section class="home-intro">
+  <p class="home-eyebrow">Researcher · Center for Computational Sciences · University of Tsukuba</p>
+  <h1>Kaixu Chen</h1>
+  <p class="home-tagline">Computer Vision · Human Motion Analysis · Medical AI</p>
+  <p>
+    I develop robust, interpretable video-based methods for understanding human
+    movement, spanning <strong>clinical gait assessment</strong>,
+    <strong>sports motion analysis</strong>, and
+    <strong>multi-view 3D human pose estimation</strong>.
+    I received my Ph.D. in Engineering from the University of Tsukuba in 2025.
+  </p>
+  <p class="home-action-links">
+    <a href="{{ base_path }}/publications/">Publications</a>
+    <a href="{{ base_path }}/research/">Research</a>
+    <a href="{{ base_path }}/cv/">CV</a>
+    <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+  </p>
+</section>
 
-## Research Interests
+## Research
 
-- **Clinical gait analysis and medical AI** — video-based assessment of adult spinal deformity, phase-aware motion modeling, and clinically informed attention.
-- **3D human motion and sports analytics** — calibration-free fusion of multiple pose streams from moving cameras, with an emphasis on outdoor skiing.
-- **Driver behavior and human-centered vision** — measurement of head-motion strategies under constrained visibility.
-- **Multisensory interaction** — collaborative work on AI-driven visual-to-thermal feedback.
+{% assign research_topics = site.research | sort: "order" %}
+<div class="research-grid">
+{% for topic in research_topics %}
+  <article class="research-card">
+    <h3><a href="{{ base_path }}{{ topic.url }}">{{ topic.title }}</a></h3>
+    <p>{{ topic.excerpt }}</p>
+  </article>
+{% endfor %}
+</div>
 
-Learn more on the [Research](./research/) page.
+## Selected Publications
 
-## Selected Recent Publications
-
-- **Chen et al.**, [Clinical knowledge-guided attention for gait-based adult spinal deformity assessment from monocular video](https://doi.org/10.1117/1.JMI.13.5.054002). *Journal of Medical Imaging*, 13(5), 054002, **2026**.
-- **Wang, Chen, Ienaga, and Kuroda**, [Incision trajectory tracing for electrosurgical navigation by CNN-based knife contacting frames extraction method](https://doi.org/10.1016/j.cmpb.2026.109612). *Computer Methods and Programs in Biomedicine*, 286, 109612, **2026**.
-- **Chen et al.**, [CanonFuse3D: Human-Centric Canonical Fusion for Calibration-Free Dual-View 3D Pose Estimation in Skiing Videos](https://openreview.net/forum?id=3wYSjU8saK). *MMSports 2026 (ACM Multimedia Workshop)*, **accepted for oral presentation**.
-- **Chen et al.**, [PhaseMix: A Periodic Motion Fusion Method for Adult Spinal Deformity Classification](https://ieeexplore.ieee.org/document/10714330). *IEEE Access*, **2024**.
-
-See the full [Publications](./publications/) page or my [Google Scholar profile](https://scholar.google.com/citations?user=kpNboagAAAAJ).
+{% assign featured_papers = site.publications | where: "featured", true | sort: "featured_rank" %}
+<div class="featured-publications">
+{% for paper in featured_papers limit:4 %}
+  <article class="featured-publication">
+    <h3><a href="{{ base_path }}{{ paper.url }}">{{ paper.title }}</a></h3>
+    <p class="pub-venue">{{ paper.venue }} · {{ paper.date | date: "%Y" }}{% if paper.status == "accepted" %} · Accepted{% endif %}</p>
+    <p class="paper-links">
+      {% if paper.paperurl %}<a href="{{ paper.paperurl }}">Paper</a>{% endif %}
+      {% if paper.codeurl %}<a href="{{ paper.codeurl }}">Code</a>{% endif %}
+    </p>
+  </article>
+{% endfor %}
+</div>
+<p class="section-more"><a href="{{ base_path }}/publications/">View all publications →</a></p>
 
 ## News
 
-- **Oct 2026** — Our clinical knowledge-guided gait analysis study was published in *Journal of Medical Imaging*. [Article](https://doi.org/10.1117/1.JMI.13.5.054002)
-- **Aug 2026** — Our electrosurgical navigation study was published online in *Computer Methods and Programs in Biomedicine*. [Article](https://doi.org/10.1016/j.cmpb.2026.109612)
-- **Aug 2026** — **CanonFuse3D** was accepted at *MMSports 2026*, co-located with ACM Multimedia 2026, with an oral presentation scheduled. [Paper](https://openreview.net/forum?id=3wYSjU8saK)
-- **Apr 2026** — Our clinical knowledge-guided attention framework appeared in *SPIE Medical Imaging 2026: Image Processing*. [Proceedings paper](https://doi.org/10.1117/12.3083822)
-- **Jan 2026** — **FilterNet** appeared in the *ICEIC 2026* proceedings. [Paper](https://doi.org/10.1109/ICEIC69189.2026.11386438)
-- **Dec 2025** — Co-authored *Feel What You See*, demonstrated at *SIGGRAPH Asia 2025 Emerging Technologies*. [Paper](https://doi.org/10.1145/3757373.3763768)
-
-*Last updated: October 2026.*
+<ul class="news-list">
+{% for item in site.data.news limit:4 %}
+  <li><span class="news-date">{{ item.date }}</span> {{ item.text }}{% if item.url %} <a href="{{ item.url }}">{{ item.link_label | default: "Details" }}</a>{% endif %}</li>
+{% endfor %}
+</ul>
+<p class="site-updated">Last updated: October 2026</p>

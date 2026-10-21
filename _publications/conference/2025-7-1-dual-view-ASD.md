@@ -1,5 +1,6 @@
 ---
 title: "Spinal Disease Classification Using Deep Learning on Dual-View Videos"
+codeurl: "https://github.com/TsuguTsukumo/2stream_3D_CNN_Walk_Pytorch"
 collection: publications
 category: conferences
 permalink: /publication/dual-view-ASD-2025/

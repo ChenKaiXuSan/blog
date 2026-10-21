@@ -1,5 +1,7 @@
 ---
 title: "Incision trajectory tracing for electrosurgical navigation by CNN-based knife contacting frames extraction method"
+featured: true
+featured_rank: 3
 collection: publications
 category: journals
 permalink: /publication/incision-trajectory-tracing-2026/
