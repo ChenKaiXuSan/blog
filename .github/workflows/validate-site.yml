@@ -3,9 +3,11 @@ name: Validate academic website
 on:
   push:
     branches:
+      - academic
       - academic-lite
   pull_request:
     branches:
+      - academic
       - academic-lite
   workflow_dispatch:
 

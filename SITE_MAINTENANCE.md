@@ -4,10 +4,11 @@ This repository is a customized, lightweight Jekyll/AcademicPages website.
 
 ## Branches and GitHub Pages
 
-- `academic`: preserved pre-redesign version. Do not delete or rewrite it.
-- `academic-lite`: streamlined version maintained as the intended GitHub Pages publishing branch.
-- GitHub Pages must be set to **Deploy from a branch → academic-lite → /(root)** in [Settings → Pages](https://github.com/ChenKaiXuSan/blog/settings/pages). This is a repository setting, not a Jekyll file.
-- To return to the older site, choose `academic` in GitHub Pages Settings and save. Changing the GitHub repository's default branch is not necessary.
+- `academic`: main/default and intended GitHub Pages publishing branch, containing the streamlined website.
+- `academic-lite`: development branch used to prepare the redesign, retained for reference.
+- `academic-backup-2026-10-21`: exact snapshot of the pre-redesign `academic` branch; keep it as a rollback point.
+- GitHub Pages should use **Deploy from a branch → academic → /(root)** in [Settings → Pages](https://github.com/ChenKaiXuSan/blog/settings/pages). This is a repository setting, independent of which branch is marked the repository default.
+- For rollback, copy the snapshot from `academic-backup-2026-10-21` back onto `academic` (prefer a new reviewable PR) or temporarily select the backup branch in Pages Settings.
 
 ## Adding a publication
 
