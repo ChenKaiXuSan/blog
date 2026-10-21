@@ -38,6 +38,9 @@ jobs:
           test -s _site/assets/js/site.js
           test -s _site/assets/css/main.css
           grep -q 'CanonFuse3D' _site/index.html
+          grep -q 'class="simple-nav"' _site/index.html
+          grep -q 'id="primary-navigation"' _site/index.html
+          node --check assets/js/site.js
           grep -q 'Journal Articles' _site/publications/index.html
           if grep -q 'assets/js/main.min.js' _site/index.html; then
             echo 'Legacy JS bundle is still loaded on homepage' >&2
