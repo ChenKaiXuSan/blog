@@ -1,15 +1,22 @@
 ---
-title: "Sports Analysis & AI Research"
-excerpt: This research studies video-based sports analytics using deep learning and 3D human pose estimation to analyze athletic movements, performance, and technique in real-world environments.
+title: "Sports Analytics & Multi-View 3D Human Pose"
+excerpt: "Body-centered 3D motion analysis from mobile and uncalibrated camera views, with an emphasis on real-world skiing."
 collection: research
+order: 2
 ---
 
-## Sports Research Overview
+## Research Overview
 
-This research focuses on **video-based sports analytics** for understanding, evaluating, and improving human movement in athletic activities. By leveraging **computer vision**, **deep learning**, and **3D human pose estimation**, the work aims to extract fine-grained motion representations from video data and translate them into actionable insights for performance analysis and injury prevention.
+Quantitative sports analysis requires reliable measurements of posture and motion, even when athletes move rapidly through large outdoor environments. Fixed calibrated cameras are often impractical in these settings, and monocular 3D pose estimates can suffer from depth ambiguity, occlusion, and jitter.
 
-A key emphasis is placed on **technique-aware and phase-aware motion modeling**, enabling the analysis of complex sports movements such as cyclic actions, rapid transitions, and whole-body coordination. These models are designed to capture both spatial posture and temporal dynamics, which are essential for assessing movement quality and efficiency in sports.
+My current work develops **calibration-free, human-centric fusion** of multiple independently estimated 3D pose streams. By normalizing poses to a shared body-centered representation and combining complementary viewpoints, the goal is to recover more consistent joint motion without assuming a fixed camera rig or known camera geometry at the fusion stage.
 
-Technically, the research investigates **multimodal learning frameworks** that integrate RGB video, optical flow, skeletal keypoints, and biomechanical cues. In addition, **multi-view 3D reconstruction** and temporal refinement techniques are explored to achieve robust motion estimation under unconstrained outdoor and competition environments.
+### Skiing Motion Analysis
 
-The ultimate goal is to develop **interpretable and scalable sports AI systems** that support athlete training, performance optimization, and movement safety, bridging advanced computer vision research with real-world sports science applications.
+For **outdoor skiing**, I study moving-camera video processing, cross-view pose alignment, confidence-aware fusion, and temporal refinement. The broader objective is to enable quantitative analysis of body posture, joint kinematics, and movement technique under realistic capture conditions.
+
+### Publication
+
+- **CanonFuse3D (MMSports 2026, accepted):** *Human-Centric Canonical Fusion for Calibration-Free Dual-View 3D Pose Estimation in Skiing Videos.* [Paper on OpenReview](https://openreview.net/forum?id=3wYSjU8saK) · [ACM Multimedia 2026 program](https://2026.acmmm.org/site/technical-programme.html)
+
+This work is ongoing; evaluation protocols and recording setups continue to be refined for robust outdoor motion analysis.

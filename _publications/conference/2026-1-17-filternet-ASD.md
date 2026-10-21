@@ -15,4 +15,4 @@ vital for applications such as action recognition and healthcare.
 In gait analysis, models must capture subtle phase-specific motion patterns. However, processing entire sequences often introduces
 noise and reduces accuracy. We propose FilterNet, a frameselection framework that identifies phase-relevant frames to improve temporal modeling and enhance discriminative representation. On a clinical gait video dataset, FilterNet achieves 74.5% accuracy, 75.2% precision, and 74.3% F1-score, outperforming
 baseline methods. Though demonstrated in a medical context, the framework is broadly applicable to other periodic motion analysis tasks. 
-Code is available at: https://github.com/ChenKaiXuSan/FilterNet ASD PyTorch.
+Code is available at: [FilterNet_ASD_PyTorch](https://github.com/ChenKaiXuSan/FilterNet_ASD_PyTorch).

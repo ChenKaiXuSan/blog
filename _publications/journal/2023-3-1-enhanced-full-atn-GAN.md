@@ -6,7 +6,7 @@ permalink: /publication/enhanced-full-attention-GAN-2023
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2023-3-1
 venue: 'IEICE TRANSACTIONS on Information and Systems'
-paperurl: 'files/1_Enhanced_Full_Attention_Generative_Adversarial_Networks.pdf'
+paperurl: 'https://chenkaixusan.github.io/blog/files/1_Enhanced_Full_Attention_Generative_Adversarial_Networks.pdf'
 citation: 'Chen K X, Yamane S. Enhanced Full Attention Generative Adversarial Networks[J]. IEICE TRANSACTIONS on Information and Systems, 2023, 106(5): 813-817.'
 ---
 
