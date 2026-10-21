@@ -15,7 +15,7 @@ name                     : &name "Kaixu Chen"
 description              : &description "Kaixu Chen | Computer vision, human motion analysis, and medical AI"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://chenkaixusan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  :  # the subpath of your site, e.g. "/blog"
+baseurl                  : "/blog" # GitHub Pages project site path
 repository               : "ChenKaiXuSan/blog" # the GitHub repository of your site, e.g. "[your GitHub username]/[your repo name]"
 
 # Site Author - The following control what appear as part of the author content on the side bar.

@@ -29,38 +29,38 @@
     {
       "company": "University of Tsukuba",
       "position": "Researcher, Center for Computational Sciences",
-      "startDate": "2025-04-01",
+      "startDate": "2025-04",
       "summary": "Research on video understanding, clinical gait analysis, and multi-view 3D human motion."
     },
     {
       "company": "GHELIA Inc.",
       "position": "Artificial Intelligence Intern",
-      "startDate": "2023-06-01",
-      "endDate": "2025-04-01"
+      "startDate": "2023-06",
+      "endDate": "2025-04"
     },
     {
       "company": "RICOH Company, Ltd.",
       "position": "Artificial Intelligence Intern",
-      "startDate": "2024-02-01",
-      "endDate": "2024-04-01"
+      "startDate": "2024-02",
+      "endDate": "2024-04"
     },
     {
       "company": "Toshiba Corporation",
       "position": "Artificial Intelligence Intern",
-      "startDate": "2023-08-01",
-      "endDate": "2023-10-01"
+      "startDate": "2023-08",
+      "endDate": "2023-10"
     },
     {
       "company": "Rakuten Group, Inc.",
       "position": "Web Application Engineer (Intern)",
-      "startDate": "2023-07-01",
-      "endDate": "2023-08-01"
+      "startDate": "2023-07",
+      "endDate": "2023-08"
     },
     {
       "company": "Accenture (Shanghai)",
       "position": "Java Software Engineer",
-      "startDate": "2018-07-01",
-      "endDate": "2019-04-01"
+      "startDate": "2018-07",
+      "endDate": "2019-04"
     }
   ],
   "education": [
@@ -68,22 +68,22 @@
       "institution": "University of Tsukuba",
       "area": "Engineering (IMIS)",
       "studyType": "Ph.D.",
-      "startDate": "2022-04-01",
-      "endDate": "2025-03-31"
+      "startDate": "2022-04",
+      "endDate": "2025-03"
     },
     {
       "institution": "Kanazawa University",
       "area": "Engineering",
       "studyType": "M.Eng.",
-      "startDate": "2020-04-01",
-      "endDate": "2022-03-31"
+      "startDate": "2020-04",
+      "endDate": "2022-03"
     },
     {
       "institution": "Inner Mongolia University of Technology",
       "area": "Computer Science and Technology",
       "studyType": "B.Eng.",
-      "startDate": "2014-09-01",
-      "endDate": "2018-06-30"
+      "startDate": "2014-09",
+      "endDate": "2018-06"
     }
   ],
   "skills": [
