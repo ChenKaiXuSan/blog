@@ -9,118 +9,86 @@ redirect_from:
 
 {% include base_path %}
 
-<img src="../images/self_photo.jpg" alt="Self Photo" width="300"/>
+## Academic Appointment
 
-Education
-======
+**Researcher**, [Center for Computational Sciences (CCS)](https://www.ccs.tsukuba.ac.jp/eng/), University of Tsukuba, Japan  
+*April 2025 – Present*
 
-- **2022.04 ~ 2025.03** | Ph.D. in Engineering  
-  International Master’s/Doctoral Program in Intelligent and Mechanical Interaction Systems (IMIS),  
-  University of Tsukuba, Japan
+Research on computer vision and machine learning for video-based clinical gait assessment, sports motion analysis, and multi-view 3D human pose estimation.
 
-- **2020.04 ~ 2022.03** | M.Eng. in Engineering  
-  Graduate School of Engineering Science,  
-  Kanazawa University, Japan
+## Education
 
-- **2014.09 ~ 2018.06** | B.Eng. in Computer Science and Technology  
-  College of Computer Science and Technology,  
-  Inner Mongolia University of Technology, China
+- **Ph.D. in Engineering**, University of Tsukuba, Japan, *April 2022 – March 2025*  
+  International Master's/Doctoral Program in Intelligent and Mechanical Interaction Systems (IMIS).  
+  **Dissertation:** *A Study on Classifying Gait Impairment through Spatiotemporal Analysis of Video*.  
+  **Supervisor:** Prof. Yoshihiro Kuroda.
+- **M.Eng. in Engineering**, Kanazawa University, Japan, *April 2020 – March 2022*.
+- **B.Eng. in Computer Science and Technology**, Inner Mongolia University of Technology, China, *September 2014 – June 2018*.
 
-Professional Experience
-======
-### Researcher — Center for Computational Sciences
-**University of Tsukuba** — Japan
-*Apr 2025 – Present*
+## Research Interests
 
-- Develop **computer vision and deep learning** methods for clinical gait analysis, sports motion analysis, and multi-view 3D human pose estimation.
-- Study **calibration-free dual-view pose fusion** for moving-camera videos and interpretable, clinically guided recognition of human motion.
-- Collaborate with researchers in computer vision, orthopedics, and human–computer interaction.
-
----
-
-### Artificial Intelligence Intern  
-**GHELIA Inc.** — Japan  
-*Jun 2023 – Apr 2025* | Hybrid
-
-- Worked on **computer vision and pattern recognition** tasks.
-- Developed and experimented with AI models for real-world applications.
-- Gained hands-on experience in **industry-oriented AI development workflows**.
-
----
-
-### Artificial Intelligence Intern  
-**RICOH Company, Ltd.** — Japan  
-*Feb 2024 – Apr 2024* | Hybrid
-
-- Participated in short-term R&D projects focused on **computer vision**.
-- Implemented and evaluated machine learning models for **pattern recognition** tasks.
-- Collaborated with corporate research teams.
-
----
-
-### Artificial Intelligence Intern  
-**Toshiba Corporation** — Japan  
-*Aug 2023 – Oct 2023* | Hybrid
-
-- Worked on **AI and computer vision** projects using **Python and PyTorch**.
-- Supported model development and experimentation for applied AI tasks.
-- Gained experience in large-scale corporate R&D environments.
-
----
-
-### Web Application Engineer (Intern)  
-**Rakuten Group, Inc.** — Japan  
-*Jul 2023 – Aug 2023* | Remote
-
-- Developed and maintained **web applications**.
-- Contributed to backend/frontend software development in a production environment.
-- Gained experience with **software engineering practices** in a large tech company.
-
----
-
-### Java Software Engineer  
-**Accenture (Shanghai)** — China  
-*Jul 2018 – Apr 2019* | On-site
-
-- Worked as a **Java software engineer** on enterprise-level projects.
-- Involved in **Java development and IT infrastructure-related systems**.
-- Gained foundational experience in professional software development.
-  
-## Research Highlights
-
-- **Clinical gait assessment:** Video-based adult spinal deformity analysis using spatiotemporal learning, periodic motion fusion, and clinician-informed attention (*Frontiers in Neuroscience* 2023; *IEEE Access* 2024; *Journal of Medical Imaging* 2026).
-- **3D human pose estimation:** Human-centric, calibration-free fusion of dual-view pose streams for outdoor skiing analysis (*MMSports 2026*, accepted).
-- **Medical navigation:** Co-authored work on CNN-based detection of surgical tool–tissue contact for incision trajectory tracing (*Computer Methods and Programs in Biomedicine* 2026).
-- **Driver behavior:** Multi-view analysis of compensatory head movement under simulated visual-field restrictions (ongoing research).
-
-## Professional Skills
-
-- **Programming Languages**: Python, Java  
-- **Deep Learning Frameworks**: PyTorch, PyTorchVideo, PyTorch Lightning, Hugging Face  
-- **Data Science**: pandas, scikit-learn  
-- **Tools & Platforms**: Docker, Linux, Matplotlib, Seaborn
-
----
-
-## Language Proficiency
-
-- **Chinese (Mandarin)** – Native  
-- **English** – Fluent (speaking and writing)  
-- **Japanese** – Advanced (proficient in daily communication and academic reading/writing)
-
----
-
-## Hobbies
-
-- Biking  
-- Swimming & Running  
-- Gaming  
-  - Overwatch 2  
-  - Diablo IV  
-  - Monster Hunter  
-- Anime
+Computer vision; human motion analysis; video understanding; multi-view 3D human pose estimation; medical image and video analysis; deep learning for sports and healthcare.
 
 ## Publications
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+
+Peer-reviewed journal articles and conference papers are listed below, most recent first within each category. The list is generated from the site's publication records; **my name is emphasized** in the citations.
+
+{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+
+### Journal Articles
+
+<ol>
+{% for post in sorted_publications %}
+{% if post.category == 'journals' %}
+{% assign paper_citation = post.citation | default: post.title %}
+{% assign paper_citation = paper_citation | replace: 'Chen K X', '<strong>Chen K X</strong>' | replace: 'Chen K,', '<strong>Chen K</strong>,' | replace: 'K. Chen', '<strong>K. Chen</strong>' %}
+<li>{{ paper_citation }} {% if post.paperurl %}<a href="{{ post.paperurl }}">[Paper]</a>{% endif %} <a href="{{ base_path }}{{ post.url }}">[Details]</a></li>
+{% endif %}
+{% endfor %}
+</ol>
+
+### Conference Papers
+
+<ol>
+{% for post in sorted_publications %}
+{% if post.category == 'conferences' %}
+{% assign paper_citation = post.citation | default: post.title %}
+{% assign paper_citation = paper_citation | replace: 'Chen K X', '<strong>Chen K X</strong>' | replace: 'Chen K,', '<strong>Chen K</strong>,' | replace: 'K. Chen', '<strong>K. Chen</strong>' %}
+<li>{{ paper_citation }} {% if post.status == 'accepted' %}<em>(Accepted; forthcoming.)</em>{% endif %} {% if post.paperurl %}<a href="{{ post.paperurl }}">[Paper]</a>{% endif %} <a href="{{ base_path }}{{ post.url }}">[Details]</a></li>
+{% endif %}
+{% endfor %}
+</ol>
+
+For the latest bibliographic information, see my [Google Scholar profile]({{ site.author.googlescholar }}).
+
+## Research Support
+
+- **FY2025 — Young Researcher Support Program (First Call)**, Cybermedicine Research Center, University of Tsukuba. Research support awarded: **¥1,000,000**.
+
+## Selected Research Projects
+
+- **Interpretable clinical gait analysis:** Video-based adult spinal deformity assessment using phase-aware motion representations and clinical knowledge-guided attention, including *PhaseMix*, *FilterNet*, and related clinical gait studies.
+- **3D human motion analysis for outdoor skiing:** Human-centric canonicalization and calibration-free dual-view 3D pose fusion from moving-camera video (*CanonFuse3D*, MMSports 2026, accepted).
+- **Compensatory head motion during driving:** Multi-view analysis of head movement and visual-scanning behavior under simulated visual-field limitations (*ongoing*).
+- **Image-guided electrosurgical navigation:** Collaborative work on CNN-based identification of instrument–tissue contact frames for tracing incision trajectories.
+
+## Industry Experience
+
+- **Artificial Intelligence Intern**, GHELIA Inc., Japan — *June 2023 – April 2025*. Computer vision and pattern recognition research and development.
+- **Artificial Intelligence Intern**, RICOH Company, Ltd., Japan — *February – April 2024*. Applied computer vision and machine learning.
+- **Artificial Intelligence Intern**, Toshiba Corporation, Japan — *August – October 2023*. AI and computer vision prototyping with Python and PyTorch.
+- **Web Application Engineer Intern**, Rakuten Group, Inc., Japan — *July – August 2023*. Web application development.
+- **Java Software Engineer**, Accenture (Shanghai), China — *July 2018 – April 2019*. Enterprise software development.
+
+## Technical Skills
+
+- **Programming:** Python, Java.
+- **Deep learning and data science:** PyTorch, PyTorch Lightning, Hugging Face, scikit-learn, pandas.
+- **Computer vision:** Spatiotemporal video models, 2D/3D human pose estimation, multi-view geometry, and motion analysis.
+- **Tools and computing:** Git, Docker, Linux.
+
+## Languages
+
+- **Chinese (Mandarin):** Native.
+- **English:** Fluent.
+- **Japanese:** Advanced.
