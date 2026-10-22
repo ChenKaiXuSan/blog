@@ -1,118 +1,74 @@
-# Kaixu Chen's Academic Blog
+# Kaixu Chen — Academic Website
 
-**个人学术博客网站 / Personal Academic Blog and Portfolio**
+**Personal academic website of Kaixu Chen (陈凯旭)**  
+Researcher, [Center for Computational Sciences (CCS)](https://www.ccs.tsukuba.ac.jp/eng/), University of Tsukuba, Japan.
 
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fchenkaixusan.github.io%2F)
-[![GitHub Pages](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ChenKaiXuSan/blog/actions/workflows/pages/pages-build-deployment)
+[**Visit Website**](https://chenkaixusan.github.io/blog/) · [Research](https://chenkaixusan.github.io/blog/research/) · [Publications](https://chenkaixusan.github.io/blog/publications/) · [Academic CV](https://chenkaixusan.github.io/blog/cv/) · [Google Scholar](https://scholar.google.com/citations?user=kpNboagAAAAJ)
 
-这是一个基于 Jekyll 和 Academic Pages 模板构建的个人学术网站，用于展示研究成果、学术出版物和博客文章。
+This repository contains the source of my academic website, built with **Jekyll** and [AcademicPages](https://github.com/academicpages/academicpages.github.io) and hosted on **GitHub Pages**. It presents my research, publications, academic background, and writing.
 
-This is a personal academic website built with Jekyll and the Academic Pages template, showcasing research work, academic publications, and blog posts.
+个人学术网站，介绍计算机视觉、人体运动分析、医学人工智能方面的研究，以及论文与学术履历。
 
-## 🌐 Website
+## Research Areas
 
-访问网站 / Visit the website: [https://chenkaixusan.github.io/blog/](https://chenkaixusan.github.io/blog/)
+- **Clinical Gait Analysis & Medical AI:** Video-based assessment of adult spinal deformity, spatiotemporal modeling, and clinically guided attention.
+- **Sports Analytics & 3D Human Pose:** Multi-view motion understanding and calibration-free pose fusion, particularly for outdoor skiing.
+- **Driver Behavior & Human-Centered Vision:** Analysis of head movements and visual scanning under restricted visibility.
+- **Haptic & Multisensory Interaction:** Collaborative research linking visual understanding with physical feedback.
 
-## 👤 About
+For current projects and results, visit the [Research](https://chenkaixusan.github.io/blog/research/) and [Publications](https://chenkaixusan.github.io/blog/publications/) pages.
 
-我是陈凯旭（Kaixu Chen），筑波大学的研究员，专注于 AI、深度学习和机器学习在视频和图像处理中的应用。
+## Repository Structure
 
-I am Kaixu Chen, a researcher at the University of Tsukuba, specializing in the application of AI, DL, and ML to video and image processing.
+| Path | Purpose |
+| --- | --- |
+| `_pages/about.md` | Homepage and recent news |
+| `_pages/cv.md` | Academic CV |
+| `_publications/` | Journal and conference publication entries |
+| `_research/` | Research area descriptions |
+| `_posts/` | Blog posts and archives |
+| `_config.yml` | Jekyll configuration and author links |
+| `_data/navigation.yml` | Header navigation |
+| `images/`, `files/`, `assets/` | Images, publication PDFs, and site assets |
 
-## 📚 Content
+Most updates only require editing Markdown files. Publication entries use YAML front matter; keep their `category` values consistent with the existing journal (`journals`) and conference (`conferences`) records. Mark accepted-but-not-yet-published papers accordingly.
 
-本网站包含以下内容 / This website includes:
+## Local Preview
 
-- 📝 Research Publications / 研究出版物
-- 💡 Blog Posts / 博客文章
-- 👨‍🔬 Research Projects / 研究项目
-- 📊 Academic CV / 学术简历
-
-## 🛠️ Technology Stack
-
-- **Static Site Generator**: Jekyll
-- **Template**: Academic Pages
-- **Hosting**: GitHub Pages
-- **Languages**: HTML, CSS, JavaScript, Markdown
-
-## 🚀 Development Setup
-
-### Local Development
-
-### Prerequisites (先决条件)
-
-1. Clone the repository and make updates as detailed above.
-
-### Using IDE (使用 IDE)
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## 🐳 Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
+Requires **Ruby**, **Bundler**, and **Git**.
 
 ```bash
-chmod -R 777 .
-docker compose up
+git clone https://github.com/ChenKaiXuSan/blog.git
+cd blog
+bundle install
+bundle exec jekyll serve
 ```
 
-You should now be able to access the website from `localhost:4000`.
+Open **http://localhost:4000/blog/**. The `/blog` path comes from `baseurl` in `_config.yml`.
 
-### 💻 Using DevContainer in VS Code (在 VS Code 中使用开发容器)
+If Ruby gem installation encounters a permissions error, install dependencies within the project instead:
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+```bash
+bundle config set --local path vendor/bundle
+bundle install
+```
 
-## 📝 Contributing
+Alternatively, the repository includes a `Dockerfile` and `docker-compose.yaml` for container-based development; these are optional.
 
-本项目基于 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 模板。如需了解更多信息，请访问原始模板仓库。
+## Publishing
 
-This project is based on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template. For more information, please visit the original template repository.
+The **`academic`** branch is the source for GitHub Pages. Content changes pushed to that branch are built and deployed to:
 
-## 📄 License
+**https://chenkaixusan.github.io/blog/**
 
-This repository was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE file).
+Check deployment results under [GitHub Actions](https://github.com/ChenKaiXuSan/blog/actions). The published website uses the original AcademicPages layout.
 
-## 🔗 Links
+## Credits and License
 
-- 🌐 Website: [https://chenkaixusan.github.io/](https://chenkaixusan.github.io/)
-- 👨‍💼 LinkedIn: [chenkaixusan](https://linkedin.com/in/chenkaixusan)
-- 🐙 GitHub: [@ChenKaiXuSan](https://github.com/ChenKaiXuSan)
-- 🎓 Google Scholar: [Profile](https://scholar.google.com/citations?user=kpNboagAAAAJ&hl=zh-CN)
-- 🆔 ORCID: [0009-0003-8698-8899](https://orcid.org/0009-0003-8698-8899)
+The website is adapted from [AcademicPages](https://github.com/academicpages/academicpages.github.io), which builds on the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme. The included [MIT license](LICENSE) retains the original theme copyright notice.
 
----
+Research articles, figures, and third-party materials remain subject to their respective authors' and publishers' rights.
 
-<div align="center">
-Made with ❤️ using Jekyll and GitHub Pages
-</div>
+## Contact
+
+[Email](mailto:chenkaixusan@gmail.com) · [Google Scholar](https://scholar.google.com/citations?user=kpNboagAAAAJ) · [ORCID](https://orcid.org/0009-0003-8698-8899) · [GitHub](https://github.com/ChenKaiXuSan)
